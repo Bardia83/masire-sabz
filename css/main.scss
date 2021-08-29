@@ -1,14 +1,109 @@
 @import "Variables";
 @import "Mixins";
 
-.header {width: 100%;height: 100vh;background: $primaryColor;@include center(); .navbar {padding: 0;background: $white;box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); .navbar-toggler {border: none;outline: none;box-shadow: none;transition: 0.5s; &:hover, &:focus {background-color: $tertiaryColor;} } .navbar-brand {padding: 12px 8px;} .navbar-collapse .navbar-nav .nav-item { .nav-link {padding: 16px 8px;color: $black;opacity: 0.7;font-weight: bold; &:after {vertical-align: 0;} &:hover {opacity: 1;background: darken($white, 10%);} } .nav-link[aria-expanded~="true"] {opacity: 1;background: darken($white, 10%);} .dropdown-menu {width: 100%;background: $white;top: 96%;border-top: none;border-top-left-radius: 0;border-top-right-radius: 0;box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);margin: 0;padding: 0; .dropdown-item {color: $black;opacity: 0.7;font-weight: bold;padding: 8px 16px; &:hover {background: darken($white, 10%);opacity: 1;} } } } } .content {width: 35%;color: $white;text-align: center; .logo {width: 75%;height: auto;} .logo-typography {width: 75%;height: auto;} p {font-size: 1.35rem;font-family: $calibriMedium} } }
+.header {
+  width: 100%;
+  height: 100vh;
+  background: $tertiaryColor;
+  @include center();
+
+  .navbar {
+    padding: 0;
+    background: $white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+    .navbar-toggler {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      transition: 0.5s;
+
+      &:hover, &:focus {
+        background-color: $tertiaryColor;
+      }
+    }
+
+    .navbar-brand {
+      padding: 12px 8px;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item {
+      .nav-link {
+        padding: 16px 8px;
+        color: $black;
+        opacity: 0.7;
+        font-weight: bold;
+
+        &:after {
+          vertical-align: 0;
+        }
+
+        &:hover {
+          opacity: 1;
+          background: darken($white, 10%);
+        }
+      }
+
+      .nav-link[aria-expanded~="true"] {
+        opacity: 1;
+        background: darken($white, 10%);
+      }
+
+      .dropdown-menu {
+        width: 100%;
+        background: $white;
+        top: 96%;
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+        margin: 0;
+        padding: 0;
+
+        .dropdown-item {
+          color: $black;
+          opacity: 0.7;
+          font-weight: bold;
+          padding: 8px 16px;
+
+          &:hover {
+            background: darken($white, 10%);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 60%;
+    color: $white;
+    padding-top: 56px;
+    text-align: center;
+
+    .logo {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      width: 68%;
+      margin: auto;
+      padding-right: 8px;
+      font-size: 6.4vw;
+      font-family: $primaryFont;
+      text-shadow: 2px 2px $iconColor;
+    }
+  }
+}
+
 @media only screen and (max-width: $breakpoint-lg) { .header .navbar { .navbar-collapse {width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.4);position: fixed;bottom: 0;right: 0;top: 100%; .navbar-nav {max-width: 150px;height: 100%;background-color: $white; .nav-item { .dropdown-menu {position: absolute;top: 0;right: 100%;border-top: none;border-top-left-radius: 0;border-top-right-radius: 0;box-shadow: none;margin: 0;padding: 0; .dropdown-item {color: $black;opacity: 0.7;font-weight: bold;padding: 8px 16px; &:hover {background: darken($white, 10%);opacity: 1;} } } } } } } }
 
-@media only screen and (min-width: $breakpoint-sm) { .header .content { width: 30% } }
-@media only screen and (min-width: $breakpoint-md) { .header .content { width: 25% } }
-@media only screen and (min-width: $breakpoint-lg) { .header .content { width: 20% } }
-@media only screen and (min-width: $breakpoint-xl) { .header .content { width: 15% } }
-@media only screen and (min-width: $breakpoint-xxl) { .header .content { width: 10% } }
+@media only screen and (min-width: $breakpoint-sm) { .header .content { width: 45%; p { font-size: 5vw; } } }
+@media only screen and (min-width: $breakpoint-md) { .header .content { width: 40%; p { font-size: 4.4vw; } } }
+@media only screen and (min-width: $breakpoint-lg) { .header .content { width: 35%; p { font-size: 3.7vw; } } }
+@media only screen and (min-width: $breakpoint-xl) { .header .content { width: 30%; p { font-size: 3.2vw; } } }
+@media only screen and (min-width: $breakpoint-xxl) { .header .content { width: 25%; p { font-size: 2.6vw; } } }
 
 .background {background-size: cover;background: top/cover no-repeat fixed;position: relative; div {padding: 7rem 0;} .filter {position: absolute;top: 0;left: 0;right: 0;bottom: 0;} h3 {position: relative;z-index: 2;} }
 
