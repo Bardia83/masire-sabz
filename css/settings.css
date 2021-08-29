@@ -1,0 +1,310 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body, html {
+  font-family: "BYekan Regular", Arial, sans-serifl !important;
+  scroll-behavior: smooth !important;
+  letter-spacing: 0;
+  overflow-x: hidden;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "BSina Bold", Arial, sans-serif !important;
+}
+
+a {
+  transition: 0.5s !important;
+}
+
+.fs-lg {
+  font-size: 5rem;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.bg-primary {
+  background: #509c4e !important;
+}
+
+.primary-color {
+  color: #509c4e !important;
+}
+
+.bg-primary-light {
+  background: #aed6ad !important;
+}
+
+.primary-color-light {
+  color: #aed6ad !important;
+}
+
+.bg-secondary {
+  background: #e54546 !important;
+}
+
+.secondary-color {
+  color: #e54546 !important;
+}
+
+.bg-secondary-light {
+  background: #f29e9f !important;
+}
+
+.secondary-color-light {
+  color: #f29e9f !important;
+}
+
+.bg-tertiary {
+  background: #e0e0e0 !important;
+}
+
+.tertiary-color {
+  color: #e0e0e0 !important;
+}
+
+.b-sina-bold {
+  font-family: "BSina Bold";
+}
+
+.b-yekan-medium {
+  font-family: "BYekan Regular";
+}
+
+.calibri-medium {
+  font-family: "Calibri Regular";
+}
+
+.calibri-bold {
+  font-family: "Calibri Medium";
+}
+
+.small-section {
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .small-section {
+    padding: 1.5rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .small-section {
+    padding: 2rem 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .small-section {
+    padding: 3rem 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .small-section {
+    padding: 3.5rem 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .small-section {
+    padding: 4rem 0;
+  }
+}
+section {
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 576px) {
+  section {
+    padding: 2rem 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section {
+    padding: 6rem 0;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  section {
+    padding: 8rem;
+  }
+}
+.icon-sm svg {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-md svg {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-lg svg {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-sm.top, .icon-sm.bottom, .icon-sm.left, .icon-sm.right, .icon-md.top, .icon-md.bottom, .icon-md.left, .icon-md.right, .icon-lg.top, .icon-lg.bottom, .icon-lg.left, .icon-lg.right {
+  position: relative;
+}
+.icon-sm.top:before, .icon-sm.bottom:before, .icon-sm.left:before, .icon-sm.right:before, .icon-md.top:before, .icon-md.bottom:before, .icon-md.left:before, .icon-md.right:before, .icon-lg.top:before, .icon-lg.bottom:before, .icon-lg.left:before, .icon-lg.right:before {
+  content: "";
+  background-color: #9ada7c;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.icon-sm.top:before, .icon-sm.bottom:before, .icon-md.left:before, .icon-sm.right:before {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-md.top:before, .icon-md.bottom:before, .icon-md.left:before, .icon-md.right:before {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-lg.top:before, .icon-lg.bottom:before, .icon-lg.left:before, .icon-lg.right:before {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-sm.top:before {
+  bottom: 30%;
+}
+
+.icon-sm.bottom:before {
+  top: 30%;
+}
+
+.icon-sm.left:before {
+  right: 30%;
+}
+
+.icon-sm.right:before {
+  left: 30%;
+}
+
+.icon-md.top:before {
+  bottom: 20%;
+}
+
+.icon-md.bottom:before {
+  top: 20%;
+}
+
+.icon-md.left:before {
+  right: 20%;
+}
+
+.icon-md.right:before {
+  left: 20%;
+}
+
+.icon-lg.top:before {
+  bottom: 15%;
+}
+
+.icon-lg.bottom:before {
+  top: 15%;
+}
+
+.icon-lg.left:before {
+  right: 15%;
+}
+
+.icon-lg.right:before {
+  left: 15%;
+}
+
+.tab-container .icon-sm svg {
+  width: 48px;
+  height: 48px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.text-on-img {
+  position: relative;
+  cursor: pointer;
+}
+.text-on-img .background {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.text-on-img .background .text {
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  cursor: text;
+}
+.text-on-img:hover .background {
+  display: flex;
+}
+
+.gear-background {
+  width: auto;
+  position: absolute;
+}
+.gear-background:nth-of-type(1) {
+  width: 15%;
+  right: -10%;
+  top: 5%;
+}
+.gear-background:nth-of-type(2) {
+  width: 20%;
+  left: -15%;
+  bottom: -4%;
+}
+.gear-background svg {
+  width: 100%;
+  height: auto;
+  fill: #e54546;
+}
+
+/*# sourceMappingURL=settings.css.map */

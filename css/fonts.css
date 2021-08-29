@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "BSina Bold";
+  src: url("../assets/fonts/b-sina/bsina-bold.eot");
+  src: local("BSina Bold"), url("../assets/fonts/b-sina/bsina-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/b-sina/bsina-bold.woff2") format("woff2"), url("../assets/fonts/b-sina/bsina-bold.woff") format("woff"), url("../assets/fonts/b-sina/bsina-bold.ttf") format("truetype"), url("../assets/fonts/b-sina/bsina-bold.svg#BSinaBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BYekan Regular";
+  src: url("../assets/fonts/b-yekan/b-yekan-regular.eot");
+  src: local("BYekan Regular"), url("../assets/fonts/b-yekan/b-yekan-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/b-yekan/b-yekan-regular.woff2") format("woff2"), url("../assets/fonts/b-yekan/b-yekan-regular.woff") format("woff"), url("../assets/fonts/b-yekan/b-yekan-regular.ttf") format("truetype"), url("../assets/fonts/b-yekan/b-yekan-regular.svg#BYekan") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calibri Medium";
+  src: url("../assets/fonts/calibri/calibri-medium.eot");
+  src: local("Calibri Medium"), url("../assets/fonts/calibri/calibri-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/calibri/calibri-medium.woff2") format("woff2"), url("../assets/fonts/calibri/calibri-medium.woff") format("woff"), url("../assets/fonts/calibri/calibri-medium.ttf") format("truetype"), url("../assets/fonts/calibri/calibri-medium.svg#Calibri-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calibri Regular";
+  src: url("../assets/fonts/calibri/calibri-regular.eot");
+  src: local("Calibri Regular"), url("../assets/fonts/calibri/calibri-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/calibri/calibri-regular.woff2") format("woff2"), url("../assets/fonts/calibri/calibri-regular.woff") format("woff"), url("../assets/fonts/calibri/calibri-regular.ttf") format("truetype"), url("../assets/fonts/calibri/calibri-regular.svg#Calibri") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=fonts.css.map */

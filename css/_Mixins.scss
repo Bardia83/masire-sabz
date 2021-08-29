@@ -1,0 +1,43 @@
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centerPosition() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+@mixin centerBottomPosition() {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+
+@mixin fullSpacePosition() {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin transition($time: 0.5s) {
+  transition: $time cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: $time cubic-bezier(0.25, 0.1, 0.25, 1);
+  -moz-transition: $time cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-transition: $time cubic-bezier(0.25, 0.1, 0.25, 1);
+}

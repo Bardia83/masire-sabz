@@ -1,0 +1,109 @@
+@import "Variables";
+@import "Mixins";
+
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background: $white;border-radius: 12px;}
+::-webkit-scrollbar-thumb {background: #888;border-radius: 12px;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
+body, html {
+  font-family: $primaryFont !important;
+  scroll-behavior: smooth !important;
+  letter-spacing: 0;
+  overflow-x: hidden;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: $bSinaBold, Arial, sans-serif !important;}
+
+a {transition: 0.5s !important;}
+.fs-lg {font-size: 5rem;}
+
+img {border-radius: 8px}
+
+.bg-primary {background: $primaryColor !important;}
+.primary-color {color: $primaryColor !important;}
+.bg-primary-light {background: $primaryColorLight !important;}
+.primary-color-light {color: $primaryColorLight !important;}
+.bg-secondary {background: $secondaryColor !important;}
+.secondary-color {color: $secondaryColor !important;}
+.bg-secondary-light {background: $secondaryColorLight !important;}
+.secondary-color-light {color: $secondaryColorLight !important;}
+.bg-tertiary {background: $tertiaryColor !important;}
+.tertiary-color {color: $tertiaryColor !important;}
+
+.b-sina-bold { font-family: $bSinaBold; }
+.b-yekan-medium { font-family: $bYekanRegular; }
+.calibri-medium { font-family: $calibriRegular; }
+.calibri-bold { font-family: $calibriMedium; }
+
+.small-section { padding: 1rem 0; }
+@media only screen and (min-width: $breakpoint-sm) { .small-section { padding: 1.5rem 0 } }
+@media only screen and (min-width: $breakpoint-md) { .small-section { padding: 2rem 0 } }
+@media only screen and (min-width: $breakpoint-lg) { .small-section { padding: 3rem 0 } }
+@media only screen and (min-width: $breakpoint-xl) { .small-section { padding: 3.5rem 0 } }
+@media only screen and (min-width: $breakpoint-xxl) { .small-section { padding: 4rem 0 } }
+
+section { padding: 2rem 0 }
+@media only screen and (min-width: $breakpoint-sm) { section { padding: 2rem 0 } }
+@media only screen and (min-width: $breakpoint-md) { section { padding: 4rem 0 } }
+@media only screen and (min-width: $breakpoint-lg) { section { padding: 6rem 0 } }
+@media only screen and (min-width: $breakpoint-xxl) { section { padding: 8rem } }
+
+
+.icon-sm { svg {width: 36px;height: 36px;} }
+.icon-md {svg {width: 48px;height: 48px}}
+.icon-lg {svg {width: 64px;height: 64px}}
+.icon-sm.top, .icon-sm.bottom, .icon-sm.left, .icon-sm.right, .icon-md.top, .icon-md.bottom, .icon-md.left, .icon-md.right, .icon-lg.top, .icon-lg.bottom, .icon-lg.left, .icon-lg.right {position: relative; &:before {content: "";background-color: #9ada7c;border-radius: 50%;position: absolute;z-index: -1;} }
+.icon-sm.top, .icon-sm.bottom, .icon-md.left, .icon-sm.right { &:before { width: 32px;height: 32px; }}
+.icon-md.top, .icon-md.bottom, .icon-md.left, .icon-md.right { &:before { width: 48px;height: 48px; }}
+.icon-lg.top, .icon-lg.bottom, .icon-lg.left, .icon-lg.right { &:before { width: 64px;height: 64px; }}
+.icon-sm.top {&:before { bottom: 30%; }}  .icon-sm.bottom {&:before { top: 30%; }}  .icon-sm.left {&:before { right: 30%; }}  .icon-sm.right {&:before { left: 30%; }}
+.icon-md.top {&:before { bottom: 20%; }}  .icon-md.bottom {&:before { top: 20%; }}  .icon-md.left {&:before { right: 20%; }}  .icon-md.right {&:before { left: 20%; }}
+.icon-lg.top {&:before { bottom: 15%; }}  .icon-lg.bottom {&:before { top: 15%; }}  .icon-lg.left {&:before { right: 15%; }}  .icon-lg.right {&:before { left: 15%; }}
+
+.tab-container { .icon-sm { svg {width: 48px;height: 48px;} } }
+
+.center {@include center();}
+
+.position-center {@include centerPosition();}
+
+.text-on-img {
+  position: relative;
+  cursor: pointer;
+
+  .background {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    @include fullSpacePosition();
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      color: $white;
+      text-align: center;
+      font-weight: bold;
+      cursor: text;
+    }
+  }
+
+  &:hover {
+    .background {display: flex;}
+  }
+}
+
+.gear-background {
+  width: auto;
+  position: absolute;
+
+  &:nth-of-type(1) { width: 15%;right: -10%;top: 5%;}
+  &:nth-of-type(2) { width: 20%;left: -15%;bottom: -4%;}
+
+  svg {
+    width: 100%;
+    height: auto;
+    fill: $secondaryColor;
+  }
+}
