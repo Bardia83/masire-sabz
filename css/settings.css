@@ -152,13 +152,25 @@ section {
   width: 36px;
   height: 36px;
 }
+.icon-sm img {
+  width: 36px;
+  height: 36px;
+}
 
 .icon-md svg {
   width: 48px;
   height: 48px;
 }
+.icon-md img {
+  width: 48px;
+  height: 48px;
+}
 
 .icon-lg svg {
+  width: 64px;
+  height: 64px;
+}
+.icon-lg img {
   width: 64px;
   height: 64px;
 }
@@ -237,7 +249,7 @@ section {
   left: 15%;
 }
 
-.tab-container .icon-sm svg {
+.tab-container .icon-sm img {
   width: 48px;
   height: 48px;
 }

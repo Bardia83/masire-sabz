@@ -50,9 +50,9 @@ section { padding: 2rem 0 }
 @media only screen and (min-width: $breakpoint-xxl) { section { padding: 8rem } }
 
 
-.icon-sm { svg {width: 36px;height: 36px;} }
-.icon-md {svg {width: 48px;height: 48px}}
-.icon-lg {svg {width: 64px;height: 64px}}
+.icon-sm {svg {width: 36px;height: 36px;} img {width: 36px;height: 36px;}}
+.icon-md {svg {width: 48px;height: 48px} img {width: 48px;height: 48px}}
+.icon-lg {svg {width: 64px;height: 64px} img {width: 64px;height: 64px}}
 .icon-sm.top, .icon-sm.bottom, .icon-sm.left, .icon-sm.right, .icon-md.top, .icon-md.bottom, .icon-md.left, .icon-md.right, .icon-lg.top, .icon-lg.bottom, .icon-lg.left, .icon-lg.right {position: relative; &:before {content: "";background-color: #9ada7c;border-radius: 50%;position: absolute;z-index: -1;} }
 .icon-sm.top, .icon-sm.bottom, .icon-md.left, .icon-sm.right { &:before { width: 32px;height: 32px; }}
 .icon-md.top, .icon-md.bottom, .icon-md.left, .icon-md.right { &:before { width: 48px;height: 48px; }}
@@ -61,7 +61,7 @@ section { padding: 2rem 0 }
 .icon-md.top {&:before { bottom: 20%; }}  .icon-md.bottom {&:before { top: 20%; }}  .icon-md.left {&:before { right: 20%; }}  .icon-md.right {&:before { left: 20%; }}
 .icon-lg.top {&:before { bottom: 15%; }}  .icon-lg.bottom {&:before { top: 15%; }}  .icon-lg.left {&:before { right: 15%; }}  .icon-lg.right {&:before { left: 15%; }}
 
-.tab-container { .icon-sm { svg {width: 48px;height: 48px;} } }
+.tab-container { .icon-sm { img {width: 48px;height: 48px;} } }
 
 .center {@include center();}
 

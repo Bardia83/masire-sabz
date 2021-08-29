@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     addAnimateToElements();
-    enableCountAnimation();
+    // enableCountAnimation();
 
     window.addEventListener("scroll", function () {
         addAnimateToElements();
-        enableCountAnimation();
+        // enableCountAnimation();
     });
     // Hide the menu when clicking on dropdown items
     const navItemsParent = document.querySelector("#navbarNavDropdown")
