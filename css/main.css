@@ -62,9 +62,8 @@
   opacity: 1;
 }
 .header .content {
-  width: 60%;
+  width: 80%;
   color: #FFFFFF;
-  padding-top: 56px;
   text-align: center;
 }
 .header .content .logo {

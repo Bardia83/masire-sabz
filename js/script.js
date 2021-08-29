@@ -1,21 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    addAnimateToElements();
+    enableCountAnimation();
+
     window.addEventListener("scroll", function () {
-        const elements = document.querySelectorAll("[data-bs-animation]");
-        const countableElements = document.querySelectorAll("[data-bs-count]");
-        for (let element of elements) {
-            if (isElementInViewport(element)) {
-                addAnimation(element);
-            }
-        }
-        for (let element of countableElements) {
-            if (isElementInViewport(element)) {
-                countAnimation(element);
-            }
-        }
+        addAnimateToElements();
+        enableCountAnimation();
     });
     // Hide the menu when clicking on dropdown items
-    let navItemsParent = document.querySelector("#navbarNavDropdown")
-    let navItems = navItemsParent.querySelectorAll(".navbar-nav .nav-item .dropdown-menu .dropdown-item");
+    const navItemsParent = document.querySelector("#navbarNavDropdown")
+    const navItems = navItemsParent.querySelectorAll(".navbar-nav .nav-item .dropdown-menu .dropdown-item");
     for (let navItem of navItems) {
         navItem.addEventListener("click", () => {
             if (navItemsParent.className.match("show")) {
@@ -24,6 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+function addAnimateToElements() {
+    const elements = document.querySelectorAll("[data-bs-animation]");
+    elements.forEach(element => {
+        if (isElementInViewport(element)) {
+            addAnimation(element);
+        }
+    });
+}
+
+function enableCountAnimation() {
+    const countableElements = document.querySelectorAll("[data-bs-count]");
+    countableElements.forEach(element => {
+        if (isElementInViewport(element)) {
+            countAnimation(element);
+        }
+    });
+}
 
 function addAnimation(el) {
     el.classList.add(el.getAttribute("data-bs-animation"));
