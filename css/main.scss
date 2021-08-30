@@ -128,20 +128,20 @@
   }
 }
 
-//#sessionZeroPartTwoBg { background-image: url("../assets/images/sm/session-zero-part-two.webp"); }
-//#sessionZeroPartThreeBg { background-image: url("../assets/images/sm/session-zero-part-three.webp"); }
-//#sessionOnePartOneBg { background-image: url("../assets/images/sm/session-one-part-one.webp"); }
-//#sessionTwoPartOneBg { background-image: url("../assets/images/sm/session-two-part-one.webp"); }
-//#sessionTwoPartTwoBg { background-image: url("../assets/images/sm/session-two-part-two.webp"); }
-//#sessionTwoPartSixBg { background-image: url("../assets/images/sm/session-two-part-six.webp"); }
-//#sessionThreePartOneBg { background-image: url("../assets/images/sm/session-three-part-one.webp"); }
-//#sessionFourPartOneBg { background-image: url("../assets/images/sm/session-four-part-one.webp"); }
-//#sessionFourPartFiveBg { background-image: url("../assets/images/sm/session-four-part-five.webp"); }
-//#sessionFourPartNineBg { background-image: url("../assets/images/sm/session-four-part-nine.webp"); }
-//#sessionFourPartTenBg { background-image: url("../assets/images/sm/session-four-part-three.webp"); }
-//#sessionFourPartTwelveBg { background-image: url("../assets/images/sm/session-four-part-twelve.webp"); }
+#sessionZeroPartTwoBg { background-image: url("../assets/images/sm/session-zero-part-two.webp"); }
+#sessionZeroPartThreeBg { background-image: url("../assets/images/sm/session-zero-part-three.webp"); }
+#sessionOnePartOneBg { background-image: url("../assets/images/sm/session-one-part-one.webp"); }
+#sessionTwoPartOneBg { background-image: url("../assets/images/sm/session-two-part-one.webp"); }
+#sessionTwoPartTwoBg { background-image: url("../assets/images/sm/session-two-part-two.webp"); }
+#sessionTwoPartSixBg { background-image: url("../assets/images/sm/session-two-part-six.webp"); }
+#sessionThreePartOneBg { background-image: url("../assets/images/sm/session-three-part-one.webp"); }
+#sessionFourPartOneBg { background-image: url("../assets/images/sm/session-four-part-one.webp"); }
+#sessionFourPartFiveBg { background-image: url("../assets/images/sm/session-four-part-five.webp"); }
+#sessionFourPartNineBg { background-image: url("../assets/images/sm/session-four-part-nine.webp"); }
+#sessionFourPartTenBg { background-image: url("../assets/images/sm/session-four-part-three.webp"); }
+#sessionFourPartTwelveBg { background-image: url("../assets/images/sm/session-four-part-twelve.webp"); }
 
-//@media only screen and (min-width: $breakpoint-sm) {
+@media only screen and (min-width: $breakpoint-sm) {
   #sessionZeroPartTwoBg { background-image: url("../assets/images/md/session-zero-part-two.webp"); }
   #sessionZeroPartThreeBg { background-image: url("../assets/images/md/session-zero-part-three.webp"); }
   #sessionOnePartOneBg { background-image: url("../assets/images/md/session-one-part-one.webp"); }
@@ -154,7 +154,7 @@
   #sessionFourPartNineBg { background-image: url("../assets/images/md/session-four-part-nine.webp"); }
   #sessionFourPartTenBg { background-image: url("../assets/images/md/session-four-part-three.webp"); }
   #sessionFourPartTwelveBg { background-image: url("../assets/images/md/session-four-part-twelve.webp"); }
-//}
+}
 
 @media only screen and (min-width: $breakpoint-md) {
   #sessionZeroPartTwoBg { background-image: url("../assets/images/lg/session-zero-part-two.webp"); }
