@@ -4,6 +4,7 @@
 .header {
   width: 100%;
   height: 100vh;
+  padding-top: 56px;
   background: $tertiaryColor;
   @include center();
 
@@ -104,15 +105,76 @@
 @media only screen and (min-width: $breakpoint-xl) { .header .content { width: 30%; p { font-size: 3.2vw; } } }
 @media only screen and (min-width: $breakpoint-xxl) { .header .content { width: 25%; p { font-size: 2.6vw; } } }
 
-.background {background-size: cover;background: top/cover no-repeat fixed;position: relative; div {padding: 7rem 0;} .filter {position: absolute;top: 0;left: 0;right: 0;bottom: 0;} h3 {position: relative;z-index: 2;} }
+.background {
+  background-size: cover;
+  background: top/cover no-repeat fixed;
+  position: relative;
+
+  div {
+    padding: 7rem 0;
+  }
+
+  .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  h3 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+//#sessionZeroPartTwoBg { background-image: url("../assets/images/sm/session-zero-part-two.webp"); }
+//#sessionZeroPartThreeBg { background-image: url("../assets/images/sm/session-zero-part-three.webp"); }
+//#sessionOnePartOneBg { background-image: url("../assets/images/sm/session-one-part-one.webp"); }
+//#sessionTwoPartOneBg { background-image: url("../assets/images/sm/session-two-part-one.webp"); }
+//#sessionTwoPartTwoBg { background-image: url("../assets/images/sm/session-two-part-two.webp"); }
+//#sessionTwoPartSixBg { background-image: url("../assets/images/sm/session-two-part-six.webp"); }
+//#sessionThreePartOneBg { background-image: url("../assets/images/sm/session-three-part-one.webp"); }
+//#sessionFourPartOneBg { background-image: url("../assets/images/sm/session-four-part-one.webp"); }
+//#sessionFourPartFiveBg { background-image: url("../assets/images/sm/session-four-part-five.webp"); }
+//#sessionFourPartNineBg { background-image: url("../assets/images/sm/session-four-part-nine.webp"); }
+//#sessionFourPartTenBg { background-image: url("../assets/images/sm/session-four-part-three.webp"); }
+//#sessionFourPartTwelveBg { background-image: url("../assets/images/sm/session-four-part-twelve.webp"); }
+
+//@media only screen and (min-width: $breakpoint-sm) {
+  #sessionZeroPartTwoBg { background-image: url("../assets/images/md/session-zero-part-two.webp"); }
+  #sessionZeroPartThreeBg { background-image: url("../assets/images/md/session-zero-part-three.webp"); }
+  #sessionOnePartOneBg { background-image: url("../assets/images/md/session-one-part-one.webp"); }
+  #sessionTwoPartOneBg { background-image: url("../assets/images/md/session-two-part-one.webp"); }
+  #sessionTwoPartTwoBg { background-image: url("../assets/images/md/session-two-part-two.webp"); }
+  #sessionTwoPartSixBg { background-image: url("../assets/images/md/session-two-part-six.webp"); }
+  #sessionThreePartOneBg { background-image: url("../assets/images/md/session-three-part-one.webp"); }
+  #sessionFourPartOneBg { background-image: url("../assets/images/md/session-four-part-one.webp"); }
+  #sessionFourPartFiveBg { background-image: url("../assets/images/md/session-four-part-five.webp"); }
+  #sessionFourPartNineBg { background-image: url("../assets/images/md/session-four-part-nine.webp"); }
+  #sessionFourPartTenBg { background-image: url("../assets/images/md/session-four-part-three.webp"); }
+  #sessionFourPartTwelveBg { background-image: url("../assets/images/md/session-four-part-twelve.webp"); }
+//}
+
+@media only screen and (min-width: $breakpoint-md) {
+  #sessionZeroPartTwoBg { background-image: url("../assets/images/lg/session-zero-part-two.webp"); }
+  #sessionZeroPartThreeBg { background-image: url("../assets/images/lg/session-zero-part-three.webp"); }
+  #sessionOnePartOneBg { background-image: url("../assets/images/lg/session-one-part-one.webp"); }
+  #sessionTwoPartOneBg { background-image: url("../assets/images/lg/session-two-part-one.webp"); }
+  #sessionTwoPartTwoBg { background-image: url("../assets/images/lg/session-two-part-two.webp"); }
+  #sessionTwoPartSixBg { background-image: url("../assets/images/lg/session-two-part-six.webp"); }
+  #sessionThreePartOneBg { background-image: url("../assets/images/lg/session-three-part-one.webp"); }
+  #sessionFourPartOneBg { background-image: url("../assets/images/lg/session-four-part-one.webp"); }
+  #sessionFourPartFiveBg { background-image: url("../assets/images/lg/session-four-part-five.webp"); }
+  #sessionFourPartNineBg { background-image: url("../assets/images/lg/session-four-part-nine.webp"); }
+  #sessionFourPartTenBg { background-image: url("../assets/images/lg/session-four-part-three.webp"); }
+  #sessionFourPartTwelveBg { background-image: url("../assets/images/lg/session-four-part-twelve.webp"); }
+}
 
 section { h2 {margin-bottom: 1.5rem;} article {text-align: justify; p {margin: 0;font-weight: lighter;} } }
 
 .accordion { .accordion-button {outline: none;border: none;box-shadow: none; &:after {width: 12px;height: 12px;background: none;border-bottom: 2px solid $primaryColor;border-left: 2px solid $primaryColor;transform: rotate(135deg);-o-transform: rotate(135deg);-ms-transform: rotate(135deg);-moz-transform: rotate(135deg);-webkit-transform: rotate(135deg);} &:focus {outline: none;border: none;} &:not(.collapsed) {color: $primaryColor;background: $primaryColorLight;outline: none;border: none; &:after {transform: rotate(315deg);-o-transform: rotate(315deg);-ms-transform: rotate(315deg);-moz-transform: rotate(315deg);-webkit-transform: rotate(315deg);} } } .accordion-body {max-height: 400px;overflow-x: hidden; article { p {margin: 8px 0; strong {color: $primaryColor;font-family: $bSinaBold, Arial, sans-serif;} .child {display: inline-block;padding-right: 24px; strong {color: darken($tertiaryColor, 15%) !important;} } } } } }
 .accordion.bg-secondary {background: none !important; .accordion-button { &:after {border-bottom: 2px solid $secondaryColor;border-left: 2px solid $secondaryColor;} &:not(.collapsed) {color: $secondaryColor;background: lighten($secondaryColor, 30%);} } .accordion-body { strong {color: $secondaryColor;} } }
-
-.timeline-sec {background: $primaryColorLight;display: none; .timeline {display: grid;grid-template-columns: 1fr;grid-template-rows: auto; .timeline-row {border: 6px solid $primaryColor;display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: auto;margin-bottom: -6px; .timeline-item {padding: 24px;position: relative; .timeline-circle {width: 25px;height: 25px;background: $primaryColor;border-radius: 50%;margin: 0 auto;position: absolute;top: -16px;left: 0;right: 0;} .timeline-content { .timeline-date {text-align: center;} p {text-align: justify;} } } &:first-of-type, &:last-of-type {position: relative; &:before {content: "";width: 100%;height: 6px;background: $primaryColor;position: absolute;} } &:first-of-type { &:before {top: -6px;right: -100%;} } &:nth-of-type(odd) {margin-right: 16px;border-right: none;border-top-left-radius: 16px;border-bottom-left-radius: 16px;} &:nth-of-type(even) {margin-left: 16px;border-left: none;border-top-right-radius: 16px;border-bottom-right-radius: 16px; .timeline-item {right: 12px;} } &:last-of-type { &:before {bottom: -6px;left: -100%;} } } } }
-@media only screen and (min-width: $breakpoint-md) { .timeline-sec { display: block; } }
 
 #sessionZeroPartFour {color: $white;background: $primaryColor; h1 {margin-bottom: 0.5rem;} p {font-weight: bold;} }
 @media only screen and (min-width: $breakpoint-sm) { #sessionZeroPartFour { h1 { margin-bottom: 2rem; } } }
@@ -167,11 +229,11 @@ section { h2 {margin-bottom: 1.5rem;} article {text-align: justify; p {margin: 0
   grid-template-rows: 3fr 1fr 3fr 1fr 3fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-          "line-corner-2 item-3 line-corner-1"
-          "line-corner-2 . line-corner-1"
-          "item-5 . item-4"
+          "item-1 . item-2"
           "line-between-1 . line-between-2"
-          "item-1 . item-2";
+          "item-5 . item-4"
+          "line-corner-2 . line-corner-1"
+          "line-corner-2 item-3 line-corner-1";
 
   .path-item {
     align-self: center;
@@ -215,46 +277,61 @@ section { h2 {margin-bottom: 1.5rem;} article {text-align: justify; p {margin: 0
       position: absolute;
       width: auto;
       height: 65%;
+      top: 0;
     }
   }
 
-  .path-line-corner.top, .path-line-corner.bottom {
-    margin: 0 auto;
-
-    svg {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-100%, 0);
-      -o-transform: translate(-100%, 0);
-      -ms-transform: translate(-100%, 0);
-      -moz-transform: translate(-100%, 0);
-      -webkit-transform: translate(-100%, 0);
-
-      path {
-        stroke-width: 14px;
-        stroke-linecap: round;
-      }
-    }
+  .path-line-corner.top svg {
+    left: 50%;
+  }
+  .path-line-corner.bottom svg {
+    right: 50%;
   }
 
-  .path-line-corner.top {
-    svg {
-      transform: translate(0, 0);
-      -o-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-      -moz-transform: translate(0, 0);
-      -webkit-transform: translate(0, 0);
-    }
-  }
 
 }
 
-@media only screen and (min-width: $breakpoint-md) { .path {grid-template-columns: 3fr 1fr 3fr 1fr 3fr;grid-template-rows: repeat(3, 1fr);grid-template-areas:"item-1 line-between-1 item-2 line-corner-1 line-corner-1"". . . . item-3""item-5 line-between-2 item-4 line-corner-2 line-corner-2"; .path-line { &:before {width: 100%;height: 4px;margin: auto 0;left: auto;right: auto;top: 0;bottom: 0;} } .path-line-corner.top, .path-line-corner.bottom { svg {right: 0;} } .path-line-corner.top { svg {bottom: 0;margin-bottom: 32px;} } .path-line-corner.bottom { svg {top: 0;margin-top: 32px;} } } }
-@media only screen and (min-width: $breakpoint-lg) { .path {.path-line-corner.top svg {margin-bottom: 16px;} .path-line-corner.bottom svg {margin-top: 16px;} } }
-@media only screen and (min-width: $breakpoint-xl) { .path {.path-line-corner.top svg {margin-bottom: 8px;} .path-line-corner.bottom svg {margin-top: 8px;} } }
-@media only screen and (min-width: $breakpoint-xl) { .path {.path-line-corner.top svg {margin-bottom: 8px;} .path-line-corner.bottom svg {margin-top: 8px;} } }
-@media only screen and (min-width: $breakpoint-xxl) { .path {.path-line-corner.top svg {margin-bottom: 0;} .path-line-corner.bottom svg {margin-top: 0;} } }
+@media only screen and (min-width: $breakpoint-md) {
+  .path {
+    grid-template-columns: 3fr 1fr 3fr 1fr 3fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:"item-1 line-between-1 item-2 line-corner-1 line-corner-1"". . . . item-3""item-5 line-between-2 item-4 line-corner-2 line-corner-2";
+
+    .path-line {
+      &:before {
+        width: 100%;
+        height: 4px;
+        margin: auto 0;
+        left: auto;
+        right: auto;
+        top: 0;
+        bottom: 0;
+      }
+    }
+
+    .path-line-corner {
+
+      svg {
+        width: 65%;
+        height: auto;
+      }
+
+    }
+
+    .path-line-corner.top svg {
+      top: 50%;
+      right: 0;
+      left: auto;
+    }
+
+    .path-line-corner.bottom svg {
+      top: auto;
+      bottom: 50%;
+      right: 0;
+      left: auto;
+    }
+  }
+}
 
 .list {list-style-type: disc; li {padding: 8px 0; &::marker {color: $secondaryColor;font-size: 1.2rem;} } }
 

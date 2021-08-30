@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="کارنامه سازمان ملی بهره وری سال ۱۳۹۷ تا ۱۴۰۰">
     <title>مسیر سیز</title>
-    <link rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/settings.css">
     <link rel="stylesheet" href="css/main.css">
@@ -96,7 +96,11 @@
     </nav>
 
     <div class="content">
-        <img class="logo mb-3 animate__animated" data-bs-animation="animate__fadeInDown" src="assets/images/logo-graphic.webp" alt="Company Logo">
+        <picture>
+            <source media="(min-width:768px)" srcset="assets/images/lg/logo-graphic.webp">
+            <source media="(min-width:576px)" srcset="assets/images/md/logo-graphic.webp">
+            <img class="logo mb-3 animate__animated" data-bs-animation="animate__fadeInDown" src="assets/images/sm/logo-graphic.webp" alt="" width="100%" height="auto">
+        </picture>
         <img class="mb-2 animate__animated animate__delay-020s" data-bs-animation="animate__fadeInLeft" src="assets/images/harekate-mellie-bahrevari.svg" alt="" width="60%" height="auto">
         <img class="mb-2 animate__animated animate__delay-030s" data-bs-animation="animate__fadeInRight" src="assets/images/masire-sabz.svg" alt="" width="61%" height="auto">
         <img class="mb-2 animate__animated animate__delay-040s" data-bs-animation="animate__fadeInLeft" src="assets/images/karname-sazman.svg" alt="" width="60%" height="auto">
@@ -120,12 +124,36 @@
                     <div class="carousel-inner h-100 animate__animated" data-bs-animation="animate__zoomIn">
                         <div class="carousel-item h-100 active" data-bs-interval="3000">
                             <div class="quote">
-                                <img class="animate__animated animate__delay-050s" data-bs-animation="animate__slideInDown" src="assets/icons/top-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
+                                <img class="animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn" src="assets/icons/top-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
                                 <p class="fs-4 animate__animated" data-bs-animation="animate__zoomIn">
-                                    باور به ارتقای بهره وری در طول دهه های گذشته، میتوانست در جلوگیری از بسیاری از
-                                    ابربحران های کنونی و حتی کاهش اثرگذاری تحریم ها موثر باشد
+                                    ارتقای بهره وری، در کشوری که به صورت مستمر در معرض تهدیدهای بیرونی و چالش‌های درونی
+                                    بوده، به جز قانون، به باور عمیق کارگزاران کلیدی نظام و مدیران ارشد اجرایی کشور نیاز
+                                    داشته است.
                                 </p>
-                                <img class="bottom-quote-symbol animate__animated animate__delay-050s" data-bs-animation="animate__slideInUp" src="assets/icons/bottom-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
+                                <img class="bottom-quote-symbol animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn" src="assets/icons/bottom-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100" data-bs-interval="3000">
+                            <div class="quote">
+                                <img class="animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn" src="assets/icons/top-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
+                                <p class="fs-4 animate__animated" data-bs-animation="animate__zoomIn">
+                                    حتی در صورت ایجاد گشایش‌های بین‌المللی برای اقتصاد ایران، رقابت پذیری در بازارهای
+                                    پویای جهان امروز و بهره‌مندی پایدار و عادلانه آحاد ملت از مواهب رشد اقتصادی، الزاما
+                                    مبتنی بر بهره‌وری است.
+                                </p>
+                                <img class="bottom-quote-symbol animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn" src="assets/icons/bottom-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100" data-bs-interval="3000">
+                            <div class="quote">
+                                <img class="animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn" src="assets/icons/top-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
+                                <p class="fs-4 animate__animated" data-bs-animation="animate__zoomIn">
+                                    شاخص‌ترین اقدام سازمان ملی بهره‌وری در این دوره برای پرچمداری حرکت ملی بهره‌وری
+                                    تأسیس شبکه ملی بهره وری و پیگیری ایجاد یک ساختار مویرگی و در عین حال تخصصی در
+                                    دستگاه‌های حاکمیتی و بنگاه‌های اقتصادی برای توجه جدی و متمرکز نسبت به مقوله بهره وری
+                                    است.
+                                </p>
+                                <img class="bottom-quote-symbol animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn" src="assets/icons/bottom-quote-symbol.svg" alt="SVG Icon" width="64px" height="auto">
                             </div>
                         </div>
                     </div>
@@ -143,7 +171,11 @@
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
                 <div class="text-on-img">
-                    <img class="animate__animated" data-bs-animation="animate__fadeInLeft" src="assets/images/session-zero-part-one.webp" alt="" width="100%" height="auto">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="assets/images/lg/session-zero-part-one.webp">
+                        <source media="(min-width: 578px)" srcset="assets/images/md/session-zero-part-one.webp">
+                        <img class="animate__animated" data-bs-animation="animate__fadeInLeft" src="assets/images/sm/session-zero-part-one.webp" alt="" width="100%" height="auto">
+                    </picture>
                     <p class="fw-bold mt-2 mb-0 animate__animated" data-bs-animation="animate__fadeInDown">
                         فاطمه پهلوانی رییس سازمان ملی بهره وری ایران
                     </p>
@@ -153,7 +185,7 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-zero-part-two.webp');">
+<div id="sessionZeroPartTwoBg" class="background">
     <div></div>
     <div class="filter bg-black opacity-25"></div>
 </div>
@@ -422,7 +454,7 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-zero-part-three.webp');">
+<div id="sessionZeroPartThreeBg" class="background">
     <div></div>
     <div class="bg-primary opacity-25 filter"></div>
 </div>
@@ -476,7 +508,7 @@
 </section>
 
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-one-part-one.webp');">
+<div id="sessionOnePartOneBg" class="background">
     <div>
         <h3 class="text-center h2 text-white animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn">
             به سوی سازمانی بهره ور تر...
@@ -790,7 +822,7 @@
 </section>
 
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-two-part-one.webp');">
+<div id="sessionTwoPartOneBg" class="background">
     <div>
         <h3 class="text-center h2 text-white animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn">
             استقرار چرخه بهره‌وری در دستگاه‌های اجرایی
@@ -832,12 +864,12 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-two-part-two.webp');">
+<div id="sessionTwoPartTwoBg" class="background">
     <div></div>
     <div class="filter bg-black opacity-25"></div>
 </div>
-<!--  Session Two Part Three  -->
-<section id="sessionTwoPartThree">
+<!--  Session Two Part Two  -->
+<section id="sessionTwoPartTwo">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -878,32 +910,13 @@
                                         <span class="icon-sm bottom right">
                                             <img src="assets/icons/session-two-part-three-icon-one.svg" alt="SVG Icon">
                                         </span>
-                                        <span class="mt-1 ms-3">۱</span>
+                                        <span class="mt-1 ms-2">۱</span>
                                     </h2>
                                     <h3 class="card-subtitle">ابلاغ راهنمای اجرایی</h3>
                                     <article>
                                         <p>
-                                            راهنمای اجرایی بند (الف) ماده ۵ قانون برنامه ششم توسعه کشور در آبان ماه ۱۳۹۷
-                                            از سوی معاون رییس جمهور و رییس سازمان اداری و استخدامی کشور به دستگاه های
-                                            اجرایی کشور ابلاغ شد. در این راهنما، تکالیف قانونی، مدل مفهومی و اجرایی چرخه
-                                            مدیریت بهره وری در دستگاه های اجرایی و نحوه استقرار این چرخه در ۱۰ گام تشریح
-                                            و تبیین شده است. با هدف انگیزش بیش از پیش دستگاه های اجرایی در همراهی با
-                                            حرکت ملی بهره وری جزء (۱) بند (د) تبصره ۲۱ قانون بودجه سال ۱۳۹۹ کل کشور به
-                                            تصویب رسید.
-                                        </p>
-                                        <p>
-                                            آیین نامه اجرایی این مصوبه به پیشنهاد سازمان های اداری و استخدامی کشور و
-                                            سازمان برنامه و بودجه کشور به تصویب هیأت وزیران رسید. این اقدام، سبب بسیج و
-                                            عزم بیشتر دستگاه های اجرایی در پیشبرد استقرار چرخه بهره وری، شناسایی مسائل
-                                            این حوزه و نهایی سازی برنامه های ارتقای بهره وری آنان شد.
-                                        </p>
-                                        <p>
-                                            سازمان ملی بهره وری ایران ابتدا با طبقه بندی دستگاه ها در چهار گروه “تولیدی
-                                            - اقتصادی“، ”انرژی-زیربنایی“، ”اجتماعی - فرهنگی“ و ”امور عمومی“ جلسات آموزشی
-                                            ویژه ای را جهت تبیین و تشریح برنامه های پیشرو برگزار کرد. محور اساسی این
-                                            آموزش ها، مبتنی بر آشنایی سازمان ها با الزامات قانونی پیاده سازی و استقرار
-                                            چرخه مدیریت بهره وری و آشنایی با ده گام استقرار چرخه مدیریت بهره وری در
-                                            سازمان ها و دستگاه های اجرایی کشور بود.
+                                            تبیین تکالیف قانونی، مدل مفهومی و اجرایی چرخه مدیریت بهره وری در دستگاههای
+                                            اجرایی و نحوه استقرار این چرخه در ۱۰ گام
                                         </p>
                                     </article>
                                 </div>
@@ -921,13 +934,9 @@
                                     <h3 class="card-subtitle">تشکیل کمیته های دستگاهی تدوین برنامه بهره وری</h3>
                                     <article>
                                         <p>
-                                            تشکیل کمیته های بهره وری درتمام سازمان ها با مشارکت مدیران ارشد دستگاه و
-                                            شرکت های تابعه، منتخبی از دستگاه های استانی موثر و نمایندگان تشکل ها و
-                                            واحدهای اقتصادی فعال در هر حوزه، یک اقدام اجرایی مهم در جهت به حرکت درآمدن
-                                            چرخه در سطح عموم سازمان ها، مشارکت وسیع مدیران و کارشناسان در مساله یابی،
-                                            اولویت شناسی و تخصیص بهینه منابع است. علاوه بر آن، تشکیل کمیته کارشناسی ذیل
-                                            کمیته بهره وری با عضویت کارشناسان خبره و صاحب نظر و همچنین خبرگان خارج از
-                                            دستگاه اجرایی، به این روند عمق و گستردگی بیشتری میبخشد.
+                                            تدوین برنامه بهره وری تشکیل کمیته های بهره وری درتمام سازمان‌ها با مشارکت
+                                            مدیران ارشد دستگاه و شرکت‌های تابعه، منتخبی از دستگاه‌های استانی مؤثر و
+                                            نمایندگان تشکل‌ها و واحدهای اقتصادی فعال در هر حوزه
                                         </p>
                                     </article>
                                 </div>
@@ -945,8 +954,8 @@
                                     <h3 class="card-subtitle">بازبینی اهداف و مسئولیت ها</h3>
                                     <article>
                                         <p>
-                                            هر دستگاهی فعالیت های اولویت دار خود سازمان را با تمرکز بر بیشترین سهم در تحقق
-                                            اهداف بهره وری بخش احصا و ارایه میکند.
+                                            احصا و ارایه فعالیت‌های اولویت‌دار هر سازمان با تمرکز بر بیشترین سهم در تحقق
+                                            اهداف بهره‌‍وری
                                         </p>
                                     </article>
                                 </div>
@@ -964,18 +973,9 @@
                                     <h3 class="card-subtitle">شناسایی موانع ارتقای بهره وری</h3>
                                     <article>
                                         <p>
-                                            با تصویب بند (د) تبصره ۲۱ قانون بودجه سال ۱۳۹۹ کل کشور، سازمان ملی بهره وری
-                                            ایران، ”دستورالعمل تدوین برنامه عملیاتی ارتقای بهره وری با رویکرد مساله محور،
-                                            گامهای ۵ و ۶ راهنمای اجرایی بند (الف) ماده ۵ قانون برنامه ششم توسعه در
-                                            دستگاه های اجرایی کشور“ را ابلاغ کرد.
-                                        </p>
-                                        <p>
-                                            هدف از تکمیل کاربرگ های مربوط به گامهای ۵ و ۶ ،شناسایی موانع و عوامل
-                                            ایجادکننده عدم کارایی، اثربخشی و رقابت پذیری در سطوح چهارگانه مندرج در
-                                            راهنمای اجرایی با تمرکز بر سطح واحدهای اقتصادی در رشته فعالیت های منتخب در
-                                            گام قبل است. بعد از تحلیل و ریشه یابی عوامل شکل گیری مسائل بهره وری، با تمرکز
-                                            بر هر مساله، راه حل (اقدام) همراه با تعریف راهبرد، سیاست و مجری آن اقدام و
-                                            نیز شاخص کلیدی عملکرد برای پایش مستمر اقدام تعریف میشود.
+                                            تهیه فهرستی از موانع و عوامل ایجادکننده عدم کارایی، اثربخشی و رقابتپذیری و
+                                            ارایه راه حل (اقدام) برای هر مساله به همراه تعریف راهبرد، سیاست و مجری آن
+                                            اقدام و نیز شاخص کلیدی عملکرد برای پایش مستمر
                                         </p>
                                     </article>
                                 </div>
@@ -993,19 +993,8 @@
                                     <h3 class="card-subtitle">تشکیل کارگروه خبرگی</h3>
                                     <article>
                                         <p>
-                                            همزمان با پیشرفت اجرای گام های پیشبینی شده در راهنمای اجرایی و تعیین اولویت
-                                            های سیاستی، تشکیل کارگروهی از خبرگان بهره وری در بخش ها و حوزه های مختلف با
-                                            هدف اطمینان از اتخاذ دید جامع و تخصصی ضروری تشخیص داده شد.
-                                        </p>
-                                        <p>
-                                            پنلهای خبرگی با حضور متخصصین و صاحب نظرانی خارج از دستگاه اجرایی و با نگرشی
-                                            تلفیق یافته از اولویت های بخش عمومی و خصوصی برای بررسی و بازنگری در اسناد
-                                            ارایه شده از سوی دستگاه های اجرایی تشکیل شد.
-                                        </p>
-                                        <p>
-                                            پس از بررسی ها و بحث و تبادل نظر بین نمایندگان کمیته های بهره وری دستگاه ها
-                                            و اعضای پنل خبرگی، اصلاحات احتمالی در برنامه های تدوین شده اعمال و برنامه
-                                            های نهایی جهت تصویب به هیأت وزیران ارائه شده است.
+                                            پنل‌های خبرگی با حضور متخصصان و صاحب نظرانی خارج از دستگاه اجرایی و با نگرشی
+                                            تلفیق یافته از اولویت‌های بخش عمومی و خصوصی
                                         </p>
                                     </article>
                                 </div>
@@ -1023,12 +1012,7 @@
                                     <h3 class="card-subtitle">تدوین برنامه های ارتقای بهره وری</h3>
                                     <article>
                                         <p>
-                                            سازمان ملی بهره وری ایران، قالب یکسان برای ارائه برنامه های ارتقای بهره وری
-                                            بخشهای اقتصادی را طراحی و پس از دریافت کاربرگ های مربوط به گامهای ۵ و ۶ ،به
-                                            دستگاه های اصلی متولی بخش های اقتصادی ارایه کرد. دستگاه های اجرایی برنامه های
-                                            ارتقای بهره وری پیشنهادی خود را به کمک برگزاری نشست های داخلی، جلسات توجیهی با
-                                            سازمان و نشست های مشترک در پنل های خبرگی در قالب کاربرگ ها تکمیل کرده به سازمان
-                                            ملی بهره وری ایران ارائه کرده اند.
+                                            کمک به دستگاه‌های اجرایی برای تسریع در ارایه برنامه‌های ارتقای بهره وری
                                         </p>
                                     </article>
                                 </div>
@@ -1046,11 +1030,8 @@
                                     <h3 class="card-subtitle">‌‌‌تدوین اسناد بالا دستی ارتقای بهره وری در بخش های تخصصی</h3>
                                     <article>
                                         <p>
-                                            راهبری سازمان ملی بهره وری ایران و مشارکت پویا و فعال کمیته های بهره وری و
-                                            همچنین مشارکت فعال اعضای پانل های خبرگی به تولید ۹ سند ارتقای بهره وری برای
-                                            بخش های «کشاورزی»، «نفت»، «آب، برق و گاز»، «صنعت»، «ارتباطات»، «معدن»،
-                                            «ساختمان»، «حمل و نقل و انبارداری» و «سایر خدمات» منجر شد. این اسناد در
-                                            خرداد ۱۴۰۰ ،برای تصویب به هیات دولت ارایه و به تصویب رسید.
+                                            تولید 9 سند ارتقای بهره‌وری برای بخش‌های کشاورزی، نفت، آب، برق و گاز، صنعت،
+                                            ارتباطات، معدن، ساختمان، حمل و نقل و انبارداری و سایر خدمات
                                         </p>
                                     </article>
                                 </div>
@@ -1068,12 +1049,8 @@
                                     <h3 class="card-subtitle">ارزیابی عملکرد دستگاه ها در اجرای برنامه های بهره وری</h3>
                                     <article>
                                         <p>
-                                            سازمان ملی بهره وری ایران ضمن نظارت، آموزش، مشاوره و راهبری دستگاه های
-                                            اجرایی در پیاده سازی گام های راهنمای اجرایی، عملکرد صد و یک دستگاه دولتی اعم
-                                            از نهاد ریاست جمهوری، وزارتخانه ها و سازمان های تابعه و نیز سازمان های مستقل
-                                            و فرابخشی را در استقرار چرخه بهره وری و تدوین برنامه های ارتقای بهره وری
-                                            ارزیابی میکند. این فرایند هم راستا و هماهنگ با ارزیابی عملکرد دستگاه های
-                                            اجرایی کشور و شاخص های عمومی در قالب جشنواره شهید رجایی انجام میشود.
+                                            ارزیابی عملکرد صد و یک دستگاه دولتی اعم از نهاد ریاست جمهوری، وزارتخانه‌ها و
+                                            سازمان‌های تابعه و نیز سازمان‌های مستقل و فرابخشی و استقرار چرخه بهره‌وری
                                         </p>
                                     </article>
                                 </div>
@@ -1091,10 +1068,7 @@
                                     <h3 class="card-subtitle">تدوین برنامه های دستگاهی ارتقای بهره وری</h3>
                                     <article>
                                         <p>
-                                            برنامه های ارتقای بهره وری دستگاه های اجرایی باید با تایید بالاترین مقام
-                                            مسوول هر دستگاه به سازمان اداری و استخدامی کشور ارسال شوند.
-                                            سازمان ملی بهره وری ایران از خرداد ۱۴۰۰ ،برنامه اجرای ۱۹ دستگاه را بررسی
-                                            و برای اجرای آزمایشی به دستگاه ها ابلاغ کرده است.
+                                            بررسی و ابلاغ برنامه اجرایی 16 دستگاه برای اجرای آزمایشی
                                         </p>
                                     </article>
                                 </div>
@@ -1111,10 +1085,8 @@
                                     </h2>
                                     <h3 class="card-subtitle">راه اندازی سامانه مدیریت بهره وری دستگاه های اجرایی</h3>
                                     <p>
-                                        سامانه مدیریت بهره وری دستگاه های اجرایی با هدف بررسی و مقایسه عملکرد دستگاه های
-                                        اصلی و دستگاه های زیرمجموعه در استقرار چرخه بهره وری از ابتدای سال ۱۴۰۰ آغاز شده
-                                        است. با راه اندازی این سامانه، گزارش عملکرد و رصد اجرای برنامه های مصوب دستگاه
-                                        ها در ارتقای بهره وری از طریق این سامانه به صورت سیستمی صورت میگیرد.
+                                        گزارش گیری و رصد سیستمی اجرای برنامه‌های مصوب دستگاه‌ها در ارتقای بهره وری از
+                                        طریق سامانه
                                     </p>
                                 </div>
                             </div>
@@ -1135,8 +1107,8 @@
         </div>
     </div>
 </section>
-<!--  Session Two Part Four  -->
-<section id="sessionTwoPartFour" class="bg-secondary-light">
+<!--  Session Two Part Three  -->
+<section id="sessionTwoPartThree" class="bg-secondary-light">
     <div class="container">
         <h2 class="animate__animated mb-4" data-bs-animation="animate__fadeInDown">
             وضعیت استقرار چرخه بهره وری در دستگاهای اجرایی در تیر ۱۴۰۰
@@ -1195,8 +1167,8 @@
         </div>
     </div>
 </section>
-<!--  Session Two Part Five  -->
-<section id="sessionTwoPartFive">
+<!--  Session Two Part Four  -->
+<section id="sessionTwoPartFour">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -1277,8 +1249,8 @@
         </div>
     </div>
 </section>
-<!--  Session Two Part Six  -->
-<section id="sessionTwoPartSix" class="bg-secondary text-white">
+<!--  Session Two Part Five  -->
+<section id="sessionTwoPartFive" class="bg-secondary text-white">
     <div class="container">
         <div class="row">
             <div class="col-12 mb-5">
@@ -1396,12 +1368,12 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-two-part-six.webp');">
+<div id="sessionTwoPartSixBg" class="background">
     <div></div>
     <div class="filter bg-black opacity-25"></div>
 </div>
-<!--  Session Two Part Seven  -->
-<section id="sessionTwoPartSeven" class="small-section">
+<!--  Session Two Part Six  -->
+<section id="sessionTwoPartSix" class="small-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -1416,22 +1388,21 @@
                     </p>
                 </article>
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center">
-                <img src="assets/images/session-two-part-seven-article-one.webp" alt="" width="100%" height="auto"
-                     class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInLeft">
+            <div class="col-lg-6 pt-4 pt-lg-0">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-two-part-seven-article-one.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-two-part-seven-article-one.webp">
+                    <img class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInLeft" src="assets/images/sm/session-two-part-seven-article-one.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
         </div>
     </div>
 </section>
-<!--  Session Two Part Eight  -->
-<section id="sessionTwoPartEight" class="small-section">
+<!--  Session Two Part Seven  -->
+<section id="sessionTwoPartSeven" class="small-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 d-none d-lg-flex flex-column justify-content-md-center">
-                <img src="assets/images/session-two-part-seven-article-two.webp" alt="" width="100%" height="auto"
-                     class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInRight">
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 order-lg-2">
                 <article>
                     <h2 class="animate__animated" data-bs-animation="animate__fadeInRight">
                         سرآغاز یک راه تازه
@@ -1445,16 +1416,19 @@
                     </p>
                 </article>
             </div>
-            <div class="col-lg-6 d-lg-none pt-4">
-                <img src="assets/images/session-two-part-seven-article-two.webp" alt="" width="100%" height="auto"
-                     class="animate__animated animate__delay-040s" data-bs-animation="animate__fadeInRight">
+            <div class="col-lg-6 order-2 order-lg-1 pt-4 pt-lg-0">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-two-part-seven-article-two.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-two-part-seven-article-two.webp">
+                    <img class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInRight" src="assets/images/sm/session-two-part-seven-article-two.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
         </div>
     </div>
 </section>
 
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-three-part-one.webp');">
+<div id="sessionThreePartOneBg" class="background">
     <div>
         <h3 class="text-center h2 text-white animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn">
             تقویت حرکت ملی بهره وری
@@ -1496,7 +1470,7 @@
         </div>
     </div>
 </section>
-<!--  Session Three Part Three  -->
+<!--  Session Three Part Two  -->
 <section id="sessionThreePartTwo" class="bg-primary-light">
     <div class="container">
         <div class="row">
@@ -1504,54 +1478,54 @@
                 <h2 class="text-center animate__animated" data-bs-animation="animate__fadeInDown">نقشه راه توسعه شبکه
                     ملی بهره وری</h2>
                 <div class="path">
-                    <div class="path-item d-flex flex-column align-items-center" style="grid-area: item-1">
+                    <div class="path-item d-flex flex-column align-items-center animate__animated animate__delay-010s" data-bs-animation="animate__zoomIn" style="grid-area: item-1">
                         <span class="icon-lg bottom left">
                             <img src="assets/icons/session-three-part-three-icon-one.svg" alt="SVG Icon">
                         </span>
                         <p class="fw-bold mt-3 mb-0">تسهیل ارتباطات</p>
                     </div>
-                    <span class="path-line rounded-3" style="grid-area: line-between-1"></span>
-                    <div class="path-item d-flex flex-column align-items-center" style="grid-area: item-2">
+                    <span class="path-line rounded-3 animate__animated animate__delay-020s" data-bs-animation="animate__between_line" style="grid-area: line-between-1"></span>
+                    <div class="path-item d-flex flex-column align-items-center animate__animated animate__delay-010s" data-bs-animation="animate__zoomIn" style="grid-area: item-2">
                         <span class="icon-lg bottom left">
                             <img src="assets/icons/session-three-part-three-icon-two.svg" alt="SVG Icon">
                         </span>
                         <p class="fw-bold mt-3 mb-0">توسعه تعاملات</p>
                     </div>
                     <div class="path-line-corner top" style="grid-area: line-corner-1">
-                        <svg class="d-none d-md-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393 114" width="393" height="114">
-                            <path fill="none" stroke="#209947" stroke-width="6" d="M392.17 2.76L10.52 2.76C6.1 2.76 2.52 6.34 2.52 10.76L2.52 113.79" />
+                        <svg class="animate__animated animate__delay-030s d-md-none" data-bs-animation="animate__path_corner_line_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 396" width="117" height="396" fill="none" stroke="#509C4E" stroke-width="10px">
+                            <path d="M6.83 0.45L6.83 382.1C6.83 386.52 10.41 390.1 14.83 390.1L117.86 390.1" />
                         </svg>
-                        <svg class="d-inline-block d-md-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 393" width="115" height="393">
-                            <path fill="none" stroke="#209947" stroke-width="5" d="M3 392.65L3 11C3 6.58 6.58 3 11 3L114.03 3" />
+                        <svg class="animate__animated animate__delay-030s d-none d-md-inline-block" data-bs-animation="animate__path_corner_line_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 117" fill="none" stroke="#509C4E" stroke-width="8px">
+                            <path class="shp0" d="M395.17 6.76L13.52 6.76C9.1 6.76 5.52 10.34 5.52 14.76L5.52 117.79" />
                         </svg>
                     </div>
 
-                    <div class="path-item d-flex flex-column align-items-center py-4" style="grid-area: item-3">
+                    <div class="path-item d-flex flex-column align-items-center py-4 animate__animated animate__delay-030s" data-bs-animation="animate__zoomIn" style="grid-area: item-3">
                         <span class="icon-lg bottom left">
                             <img src="assets/icons/session-three-part-three-icon-three.svg" alt="SVG Icon">
                         </span>
                         <p class="fw-bold mt-3 mb-0">هم راستایی و هم آفزایی</p>
                     </div>
 
-                    <div class="path-item d-flex flex-column align-items-center" style="grid-area: item-4">
+                    <div class="path-item d-flex flex-column align-items-center animate__animated animate__delay-030s" data-bs-animation="animate__zoomIn" style="grid-area: item-4">
                         <span class="icon-lg bottom right">
                             <img src="assets/icons/session-three-part-three-icon-four.svg" alt="SVG Icon">
                         </span>
                         <p class="fw-bold mt-3 mb-0">تحقق سهم ۳۵ درصدی از GDP</p>
                     </div>
-                    <span class="path-line rounded-3" style="grid-area: line-between-2"></span>
-                    <div class="path-item d-flex flex-column align-items-center" style="grid-area: item-5">
+                    <span class="path-line rounded-3 animate__animated animate__delay-020s" data-bs-animation="animate__between_line" style="grid-area: line-between-2"></span>
+                    <div class="path-item d-flex flex-column align-items-center animate__animated animate__delay-030s" data-bs-animation="animate__zoomIn" style="grid-area: item-5">
                         <span class="icon-lg bottom left">
                             <img src="assets/icons/session-three-part-three-icon-five.svg" alt="SVG Icon">
                         </span>
                         <p class="fw-bold mt-3 mb-0">حرکت ملی بهره وری</p>
                     </div>
                     <div class="path-line-corner bottom" style="grid-area: line-corner-2">
-                        <svg class="d-none d-md-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393 114" width="393" height="114">
-                            <path fill="none" stroke="#209947" stroke-width="6" d="M392.17 111.03L10.52 111.03C6.1 111.03 2.52 107.45 2.52 103.03L2.52 0" />
+                        <svg class="animate__animated animate__delay-030s d-md-none" data-bs-animation="animate__path_corner_line_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 395" width="117" height="395" fill="none" stroke="#509C4E" stroke-width="10px">
+                            <path d="M110.86 -0.31L110.86 381.34C110.86 385.76 107.28 389.34 102.86 389.34L-0.17 389.34" />
                         </svg>
-                        <svg class="d-inline-block d-md-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 393" width="114" height="393">
-                            <path fill="none" stroke="#209947" stroke-width="5" d="M111.24 392.17L111.24 10.52C111.24 6.1 107.66 2.52 103.24 2.52L0.21 2.52" />
+                        <svg class="animate__animated animate__delay-030s d-none d-md-inline-block" data-bs-animation="animate__path_corner_line_one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 118" fill="none" stroke="#509C4E" stroke-width="8px">
+                            <path class="shp0" d="M394.17 112.03L12.52 112.03C8.1 112.03 4.52 108.45 4.52 104.03L4.52 1" />
                         </svg>
                     </div>
                 </div>
@@ -1561,7 +1535,7 @@
 </section>
 
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-four-part-one.webp');">
+<div id="sessionFourPartOneBg" class="background">
     <div>
         <h3 class="text-center h2 text-white animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn">
             فرهنگ سازی و ترویج فرهنگ بهره وری
@@ -1596,8 +1570,16 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <img class="w-100 mb-3 animate__animated animate__delay-020s" data-bs-animation="animate__zoomIn" src="assets/images/session-four-part-two-article-one.webp" alt="">
-                <img class="w-100 mb-3 animate__animated animate__delay-030s" data-bs-animation="animate__zoomIn" src="assets/images/session-four-part-two-article-two.webp" alt="">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-four-part-two-article-one.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-four-part-two-article-one.webp">
+                    <img class="mb-3 animate__animated animate__delay-020s" data-bs-animation="animate__zoomIn" src="assets/images/sm/session-four-part-two-article-one.webp" alt="" width="100%" height="auto">
+                </picture>
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-four-part-two-article-two.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-four-part-two-article-two.webp">
+                    <img class="mb-3 animate__animated animate__delay-030s" data-bs-animation="animate__zoomIn" src="assets/images/sm/session-four-part-two-article-two.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
             <div class="col-12 col-lg-6">
                 <article>
@@ -1709,7 +1691,7 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-four-part-five.webp');"><div></div></div>
+<div id="sessionFourPartFiveBg" class="background"><div></div></div>
 <!--  Session Four Part Five  -->
 <section id="sessionFourPartFive" class="small-section">
     <div class="container">
@@ -1820,7 +1802,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <img class="animate__animated" data-bs-animation="animate__zoomIn" src="assets/images/session-four-part-seven.webp" alt="" width="100%" height="auto">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-four-part-seven.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-four-part-seven.webp">
+                    <img class="animate__animated" data-bs-animation="animate__zoomIn" src="assets/images/sm/session-four-part-seven.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
             <div class="col-12 col-lg-6 pt-4 pt-lg-0">
                 <h2 class="animate__animated" data-bs-animation="animate__fadeInDown">
@@ -1865,7 +1851,11 @@
                 </article>
             </div>
             <div class="col-12 col-lg-6 pt-4 pt-lg-0">
-                <img class="animate__animated animate__delay-020s pt-4" data-bs-animation="animate__zoomIn" src="assets/images/session-four-part-eight-article-two.webp" alt="" width="100%" height="auto">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-four-part-eight-article-two.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-four-part-eight-article-two.webp">
+                    <img class="animate__animated animate__delay-020s pt-4" data-bs-animation="animate__zoomIn" src="assets/images/sm/session-four-part-eight-article-two.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
             <div class="col-12">
                 <div class="quote h-auto p-4 mt-4 animate__animated animate__delay-020s" data-bs-animation="animate__zoomIn">
@@ -1889,7 +1879,7 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-four-part-nine.webp');"><div></div></div>
+<div id="sessionFourPartNineBg" class="background"><div></div></div>
 <!--  Session Four Part Nine  -->
 <section id="sessionFourPartNine" class="small-section">
     <div class="container">
@@ -1901,17 +1891,17 @@
                 <div class="row justify-content-lg-center">
                     <div class="col-12 col-md-6 py-2 px-lg-4 animate__animated animate__delay-020s" data-bs-animation="animate__fadeInRight">
                         <div class="d-flex align-items-center justify-content-center">
-                            <span class="icon-lg bottom right">
+                            <span class="icon-lg bottom left">
                                 <img src="assets/icons/session-four-part-nine-icon-one.svg" alt="SVG Icon">
                             </span>
-                            <p class="flex-lg-grow-1 ps-4 m-0 fw-bold fs-5">
+                            <p class="flex-grow-1 ps-4 m-0 fw-bold fs-5">
                                 ایجاد باشگاه دانش آموختگان APO
                             </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 py-2 px-lg-4 animate__animated animate__delay-030s" data-bs-animation="animate__fadeInLeft">
                         <div class="d-flex align-items-center justify-content-center">
-                            <span class="icon-lg top right">
+                            <span class="icon-lg bottom left">
                             <img src="assets/icons/session-four-part-nine-icon-two.svg" alt="SVG Icon">
                         </span>
                             <p class="flex-lg-grow-1 ps-4 m-0 fw-bold fs-5">
@@ -1931,7 +1921,7 @@
                     </div>
                     <div class="col-12 col-md-6 py-2 px-lg-4 animate__animated animate__delay-050s" data-bs-animation="animate__fadeInLeft">
                         <div class="d-flex align-items-center justify-content-center">
-                            <span class="icon-lg top right">
+                            <span class="icon-lg bottom left">
                             <img src="assets/icons/session-four-part-nine-icon-four.svg" alt="SVG Icon">
                         </span>
                             <p class="flex-lg-grow-1 ps-4 m-0 fw-bold fs-5">
@@ -1945,7 +1935,7 @@
     </div>
 </section>
 <!--  Background  -->
-<div class="background" style="background-image: url('assets/images/session-four-part-three.webp');"><div></div></div>
+<div id="sessionFourPartTenBg" class="background"><div></div></div>
 <!--  Session Four Part Ten  -->
 <section id="sessionFourPartTen" class="small-section">
     <div class="container">
@@ -1976,9 +1966,12 @@
                     </ul>
                 </article>
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center">
-                <img src="assets/images/session-four-part-three-article.webp" alt="" width="100%" height="auto"
-                     class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInLeft">
+            <div class="col-lg-6">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-four-part-three-article.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-four-part-three-article.webp">
+                    <img class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInLeft" src="assets/images/sm/session-four-part-three-article.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
         </div>
     </div>
@@ -1987,11 +1980,7 @@
 <section id="sessionFourPartEleven" class="small-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 d-none d-lg-flex flex-column justify-content-md-center">
-                <img src="assets/images/session-four-part-four-article.webp" alt="" width="100%" height="auto"
-                     class="animate__animated animate__delay-030s" data-bs-animation="animate__fadeInRight">
-            </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 order-lg-2">
                 <article>
                     <h2 class="animate__animated" data-bs-animation="animate__fadeInRight">
                         افزایش ظرفیت های ارتباطی سازمان
@@ -2013,15 +2002,18 @@
                     </p>
                 </article>
             </div>
-            <div class="col-lg-6 d-md-none pt-4">
-                <img src="assets/images/session-four-part-four-article.webp" alt="" width="100%" height="auto"
-                     class="animate__animated animate__delay-040s" data-bs-animation="animate__fadeInRight">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
+                <picture>
+                    <source media="(min-width:768px)" srcset="assets/images/lg/session-four-part-four-article.webp">
+                    <source media="(min-width:576px)" srcset="assets/images/md/session-four-part-four-article.webp">
+                    <img class="animate__animated animate__delay-040s" data-bs-animation="animate__fadeInRight" src="assets/images/sm/session-four-part-four-article.webp" alt="" width="100%" height="auto">
+                </picture>
             </div>
         </div>
     </div>
 </section>
 <!--  Background  -->
-<div class="background big" style="background-image: url('assets/images/session-four-part-five.webp');">
+<div id="sessionFourPartTwelveBg" class="background big">
     <div>
         <h3 class="text-center h2 text-white animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn">
             یک رسانه یک راه...
@@ -2029,7 +2021,7 @@
     </div>
     <div class="filter bg-black opacity-75"></div>
 </div>
-<!--  Session Four Part Five  -->
+<!--  Session Four Part Twelve  -->
 <section id="sessionFourPartTwelve">
     <div class="container">
         <div class="row">
@@ -2074,7 +2066,7 @@
 <footer class="animate__animated animate__delay-050s" data-bs-animation="animate__fadeIn">
     کلیه حقوق وب‌سایت محفوظ است.
 </footer>
-<script>mocha.setup({ui: "bdd"})</script>
+<!--<script>mocha.setup({ui: "bdd"})</script>-->
 <script src="assets/libraries/intersection-observer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>

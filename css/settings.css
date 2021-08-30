@@ -301,6 +301,7 @@ section {
 
 .gear-background {
   width: auto;
+  display: none;
   position: absolute;
 }
 .gear-background:nth-of-type(1) {
@@ -317,6 +318,12 @@ section {
   width: 100%;
   height: auto;
   fill: #e54546;
+}
+
+@media only screen and (min-width: 576px) {
+  .gear-background {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=settings.css.map */

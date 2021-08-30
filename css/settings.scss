@@ -96,6 +96,7 @@ section { padding: 2rem 0 }
 
 .gear-background {
   width: auto;
+  display: none;
   position: absolute;
 
   &:nth-of-type(1) { width: 15%;right: -10%;top: 5%;}
@@ -106,4 +107,8 @@ section { padding: 2rem 0 }
     height: auto;
     fill: $secondaryColor;
   }
+}
+
+@media only screen and (min-width: $breakpoint-sm) {
+  .gear-background {display: none;}
 }
