@@ -17,14 +17,15 @@
 }
 
 body, html {
-  font-family: "BYekan Regular", Arial, sans-serifl !important;
+  font-family: "Iran Sans Regular", Arial, sans-serifl !important;
   scroll-behavior: smooth !important;
+  font-size: 1.05rem;
   letter-spacing: 0;
   overflow-x: hidden;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "BSina Bold", Arial, sans-serif !important;
+  font-family: "Iran Sans Black", Arial, sans-serif !important;
 }
 
 a {
@@ -77,22 +78,6 @@ img {
 
 .tertiary-color {
   color: #e0e0e0 !important;
-}
-
-.b-sina-bold {
-  font-family: "BSina Bold";
-}
-
-.b-yekan-medium {
-  font-family: "BYekan Regular";
-}
-
-.calibri-medium {
-  font-family: "Calibri Regular";
-}
-
-.calibri-bold {
-  font-family: "Calibri Medium";
 }
 
 .small-section {

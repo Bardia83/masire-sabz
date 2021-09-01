@@ -9,11 +9,12 @@
 body, html {
   font-family: $primaryFont !important;
   scroll-behavior: smooth !important;
+  font-size: 1.05rem;
   letter-spacing: 0;
   overflow-x: hidden;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: $bSinaBold, Arial, sans-serif !important;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: $iranSansBlack, Arial, sans-serif !important;}
 
 a {transition: 0.5s !important;}
 .fs-lg {font-size: 5rem;}
@@ -30,11 +31,6 @@ img {border-radius: 8px}
 .secondary-color-light {color: $secondaryColorLight !important;}
 .bg-tertiary {background: $tertiaryColor !important;}
 .tertiary-color {color: $tertiaryColor !important;}
-
-.b-sina-bold { font-family: $bSinaBold; }
-.b-yekan-medium { font-family: $bYekanRegular; }
-.calibri-medium { font-family: $calibriRegular; }
-.calibri-bold { font-family: $calibriMedium; }
 
 .small-section { padding: 1rem 0; }
 @media only screen and (min-width: $breakpoint-sm) { .small-section { padding: 1.5rem 0 } }

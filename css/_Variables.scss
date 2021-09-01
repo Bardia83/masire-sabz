@@ -12,7 +12,7 @@ $iconColor: #808285;
 
 
 $white: #FFFFFF;
-$black: #000000;
+$black: #212529;
 
 // Breakpoints
 $breakpoint-xs: 0;
@@ -21,12 +21,13 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
+$breakpoint-xxxl: 1900px;
 
 // Fonts
-$bSinaBold: "BSina Bold";
-$bYekanRegular: "BYekan Regular";
-$calibriRegular: "Calibri Regular";
-$calibriMedium: "Calibri Medium";
+$iranSansRegular: "Iran Sans Regular";
+$iranSansMedium: "Iran Sans Medium";
+$iranSansBold: "Iran Sans Bold";
+$iranSansBlack: "Iran Sans Black";
 
 
-$primaryFont: $bYekanRegular, Arial, sans-serifl;
+$primaryFont: $iranSansRegular, Arial, sans-serifl;
