@@ -45,6 +45,78 @@
   text-shadow: 2px 2px #808285;
 }
 
+.session-background {
+  background-color: #e54546;
+  color: #FFFFFF;
+}
+.session-background .session-background-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.session-background .session-background-container h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+.session-background .session-background-container h2 .session-number {
+  width: 50px;
+  height: 50px;
+  color: #e54546;
+  background-color: #FFFFFF;
+  font-size: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.session-background .session-background-container svg {
+  width: 108%;
+  height: auto;
+}
+
+#sessionThreeBg.session-background .session-background-svg svg {
+  margin-right: 14vw;
+}
+
+#sessionFourBg.session-background {
+  padding-bottom: 0;
+}
+#sessionFourBg.session-background .session-background-svg svg {
+  margin-right: 14vw;
+  margin-bottom: -0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #sessionOneBg.session-background .session-background-container h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #sessionOneBg.session-background .session-background-container svg {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .session-background .session-background-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #sessionTwoBg.session-background .session-background-svg svg {
+    grid-column: 2/3;
+  }
+
+  #sessionThreeBg.session-background .session-background-svg svg {
+    grid-column: 2/3;
+    margin-right: 1vw;
+  }
+
+  #sessionFourBg.session-background .session-background-svg svg {
+    grid-column: 2/3;
+    margin-right: 1vw;
+    margin-bottom: -8px;
+  }
+}
 @media only screen and (max-width: 992px) {
   .header .navbar .navbar-collapse {
     width: 100%;
@@ -183,7 +255,7 @@
 }
 
 #sessionFourPartTenBg {
-  background-image: url("../assets/images/session-four-part-three.webp");
+  background-image: url("../assets/images/session-four-part-ten.webp");
 }
 
 #sessionFourPartTwelveBg {
@@ -269,10 +341,6 @@ section article p {
   color: #e54546;
 }
 
-#sessionZeroPartFour {
-  color: #FFFFFF;
-  background: #509C4E;
-}
 #sessionZeroPartFour h1 {
   margin-bottom: 0.5rem;
 }
@@ -402,42 +470,12 @@ section article p {
 .carousel.outside .carousel-indicators [data-bs-target] {
   width: 15px;
 }
-.carousel.outside .carousel-control-prev {
+.carousel.outside .carousel-control-prev, .carousel.outside .carousel-control-next {
   display: none;
-  width: auto;
-  left: 100%;
-  right: auto;
-  justify-content: flex-start;
-}
-.carousel.outside .carousel-control-next {
-  display: none;
-  width: auto;
-  right: 100%;
-  justify-content: start;
-  padding-right: 8px;
 }
 .carousel.outside .carousel-item .card {
   background: #c7c7c7;
   border-radius: 8px;
-}
-.carousel.outside .carousel-item .card .card-body {
-  height: 240px;
-  max-height: 240px;
-  overflow-y: auto;
-}
-.carousel.outside .carousel-item .card .card-body::-webkit-scrollbar {
-  width: 2px;
-}
-.carousel.outside .carousel-item .card .card-body::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 12px;
-}
-.carousel.outside .carousel-item .card .card-body::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 12px;
-}
-.carousel.outside .carousel-item .card .card-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 .carousel.outside .carousel-item .card .card-body .card-title {
   color: #e54546;
@@ -453,7 +491,6 @@ section article p {
   width: 64px;
   height: 64px;
   position: relative;
-  z-index: 1;
 }
 .carousel.outside .carousel-item .card .card-body .card-title .icon-sm.top:before {
   bottom: 15%;
@@ -471,20 +508,27 @@ section article p {
   margin: 8px 0;
 }
 
-@media only screen and (min-width: 576px) {
-  .carousel.outside .carousel-indicators, .carousel.outside .carousel-control-prev, .carousel.outside .carousel-control-next {
-    display: flex;
-  }
-}
 @media only screen and (min-width: 768px) {
-  .carousel.outside .carousel-indicators {
-    margin: 12px 0 1.5rem 0;
+  .carousel.outside .carousel-control-next {
+    display: flex;
+    width: auto;
+    right: 100%;
+    justify-content: flex-start;
+    padding: 0 1.5rem;
   }
   .carousel.outside .carousel-control-prev {
-    padding-left: 8px;
+    display: flex;
+    width: auto;
+    left: 100%;
+    right: auto;
+    justify-content: flex-start;
+    padding: 0 1.5rem;
   }
-  .carousel.outside .carousel-control-next {
-    padding-right: 8px;
+  .carousel.outside .carousel-indicators {
+    display: flex;
+  }
+  .carousel.outside .carousel-indicators [data-bs-target] {
+    width: 25px;
   }
 }
 .carousel .carousel-indicators.quote-carousel-indicators {

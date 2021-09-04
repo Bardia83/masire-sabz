@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     addAnimateToElements();
+    startCarousel();
 
     window.addEventListener("scroll", function () {
         addAnimateToElements();
+        startCarousel();
     });
-    // Hide the menu when clicking on dropdown items
-    const navItemsParent = document.querySelector("#navbarNavDropdown")
-    const navItems = navItemsParent.querySelectorAll(".navbar-nav .nav-item .dropdown-menu .dropdown-item");
-    for (let navItem of navItems) {
-        navItem.addEventListener("click", () => {
-            if (navItemsParent.className.match("show")) {
-                navItemsParent.classList.remove("show");
-            }
-        });
-    }
+
 });
+
+function startCarousel() {
+    const carousel = document.querySelector("#carouselTwo");
+    if (isElementInViewport(carousel)) {
+        carousel.setAttribute("data-bs-ride", "carousel");
+    }
+}
 
 function addAnimateToElements() {
     const elements = document.querySelectorAll("[data-bs-animation]");
