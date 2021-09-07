@@ -31,6 +31,11 @@ img {border-radius: 8px}
 .secondary-color-light {color: $secondaryColorLight !important;}
 .bg-tertiary {background: $tertiaryColor !important;}
 .tertiary-color {color: $tertiaryColor !important;}
+.bg-fourth {background: $iconColor !important;}
+.fourth-color {color: $iconColor !important;}
+
+.iran-sans-regular {font-family: $iranSansRegular;}
+.iran-sans-medium {font-family: $iranSansMedium;}
 
 .small-section { padding: 1rem 0; }
 @media only screen and (min-width: $breakpoint-sm) { .small-section { padding: 1.5rem 0 } }
@@ -43,8 +48,9 @@ section { padding: 2rem 0 }
 @media only screen and (min-width: $breakpoint-sm) { section { padding: 2rem 0 } }
 @media only screen and (min-width: $breakpoint-md) { section { padding: 4rem 0 } }
 @media only screen and (min-width: $breakpoint-lg) { section { padding: 6rem 0 } }
-@media only screen and (min-width: $breakpoint-xxl) { section { padding: 8rem } }
+@media only screen and (min-width: $breakpoint-xxl) { section { padding: 8rem 0 } }
 
+.text-justify {text-align: justify;}
 
 .icon-sm {svg {width: 36px;height: 36px;} img {width: 36px;height: 36px;}}
 .icon-md {svg {width: 48px;height: 48px} img {width: 48px;height: 48px}}

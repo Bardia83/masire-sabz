@@ -4171,6 +4171,10 @@
     animation-delay: var(--animate-delay);
 }
 
+.animate__animated.animate__delay-110s {-webkit-animation-delay: calc(1s * 1.10);animation-delay: calc(1s * 1.10);-webkit-animation-delay: calc(var(--animate-delay) * 1.10);animation-delay: calc(var(--animate-delay) * 1.10);}
+.animate__animated.animate__delay-120s {-webkit-animation-delay: calc(1s * 1.20);animation-delay: calc(1s * 1.20);-webkit-animation-delay: calc(var(--animate-delay) * 1.20);animation-delay: calc(var(--animate-delay) * 1.20);}
+.animate__animated.animate__delay-130s {-webkit-animation-delay: calc(1s * 1.30);animation-delay: calc(1s * 1.30);-webkit-animation-delay: calc(var(--animate-delay) * 1.30);animation-delay: calc(var(--animate-delay) * 1.30);}
+
 @keyframes progressSquare {
     from {
         stroke-dasharray: 403;
@@ -4246,6 +4250,15 @@
     animation-name: progressSixtySix;
 }
 
+@keyframes progressFifty {
+    from {stroke-dasharray: 0 100;}
+    to {stroke-dasharray: 50 100;}
+}
+
+.animate__progress__fifty {
+    -webkit-animation-name: progressFifty;
+    animation-name: progressFifty;
+}
 
 .animate__path-line-offset {
     -webkit-animation-name: pathLineOffset;
@@ -4277,3 +4290,30 @@
 @keyframes projectChartFour { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 6 100;} }
 .animate__projectChartFive {-webkit-animation-name: projectChartFive;animation-name: projectChartFive;}
 @keyframes projectChartFive { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 6 100;} }
+
+.animate__fadeInDownZoomIn {
+    animation-name: fadeInDownZoomIn;
+    -webkit-animation-name: fadeInDownZoomIn;
+}
+
+@keyframes fadeInDownZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+}
+
+.animate__easeOut {
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.animate__duration_050s {
+    animation-duration: 0.50s;
+    -webkit-animation-duration: 0.50s;
+}

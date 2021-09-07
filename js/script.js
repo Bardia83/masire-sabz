@@ -39,3 +39,26 @@ function isElementInViewport(el) {
     );
 }
 
+function addCountAnimation() {
+    const elements = document.querySelectorAll("[data-bs-animation]");
+    elements.forEach(function () {
+        countAnimation(element, element.innerHTML * 1, element.getAttribute("data-bs-count") * 1, 1000, 200);
+    });
+}
+function countAnimation(el, start, end, duration, delay) {
+    if (isElementInViewport(el)) {
+        setTimeout(function () {
+            if (start === end) return;
+            const range = end - start;
+            const stepTime = Math.abs(Math.floor(duration / range));
+            let timer = setInterval(function() {
+                start++;
+                el.innerHTML = start;
+                if (start === end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }, delay);
+    }
+}
+

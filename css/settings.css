@@ -80,6 +80,22 @@ img {
   color: #e0e0e0 !important;
 }
 
+.bg-fourth {
+  background: #808285 !important;
+}
+
+.fourth-color {
+  color: #808285 !important;
+}
+
+.iran-sans-regular {
+  font-family: "Iran Sans Regular";
+}
+
+.iran-sans-medium {
+  font-family: "Iran Sans Medium";
+}
+
 .small-section {
   padding: 1rem 0;
 }
@@ -130,9 +146,13 @@ section {
 }
 @media only screen and (min-width: 1400px) {
   section {
-    padding: 8rem;
+    padding: 8rem 0;
   }
 }
+.text-justify {
+  text-align: justify;
+}
+
 .icon-sm svg {
   width: 36px;
   height: 36px;

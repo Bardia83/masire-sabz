@@ -48,12 +48,17 @@
       width: 68%;
       margin: auto;
       padding-right: 8px;
-      font-size: 8vw;
+      font-size: 10vw;
       font-family: $primaryFont;
       text-shadow: 2px 2px $iconColor;
     }
   }
 }
+
+@media only screen and (min-width: $breakpoint-sm) { .header .content { width: 95%; p { font-size: 10.5vw; } } }
+@media only screen and (min-width: $breakpoint-lg) { .header .content { width: 70%; p { font-size: 7.75vw; } } }
+@media only screen and (min-width: $breakpoint-xl) { .header .content { width: 35%; p { font-size: 4vw; } } }
+
 
 .session-background {
   background-color: $secondaryColor;
@@ -138,14 +143,6 @@
   }
 }
 
-@media only screen and (max-width: $breakpoint-lg) { .header .navbar { .navbar-collapse {width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.4);position: fixed;bottom: 0;right: 0;top: 100%; .navbar-nav {max-width: 150px;height: 100%;background-color: $white; .nav-item { .dropdown-menu {position: absolute;top: 0;right: 100%;border-top: none;border-top-left-radius: 0;border-top-right-radius: 0;box-shadow: none;margin: 0;padding: 0; .dropdown-item {color: $black;opacity: 0.7;font-weight: bold;padding: 8px 16px; &:hover {background: darken($white, 10%);opacity: 1;} } } } } } } }
-
-@media only screen and (min-width: $breakpoint-sm) { .header .content { width: 95%; p { font-size: 8vw; } } }
-@media only screen and (min-width: $breakpoint-md) { .header .content { width: 95%; p { font-size: 8.5vw; } } }
-@media only screen and (min-width: $breakpoint-lg) { .header .content { width: 70%; p { font-size: 6.4vw; } } }
-@media only screen and (min-width: $breakpoint-xl) { .header .content { width: 35%; p { font-size: 3vw; } } }
-@media only screen and (min-width: $breakpoint-xxl) { .header .content { width: 35%; p { font-size: 3.2vw; } } }
-
 .background {
   background-size: cover;
   background: top/cover no-repeat fixed;
@@ -170,7 +167,7 @@
 }
 
 
-  #sessionZeroPartTwoBg { background-image: url("../assets/images/session-zero-part-two.webp"); }
+  #sessionZeroPartTwoBg { background-image: url("../assets/images/session-zero-part-two.webp"); -webkit-background-image: url("../assets/images/session-zero-part-two.webp");}
   #sessionZeroPartThreeBg { background-image: url("../assets/images/session-zero-part-three.webp"); }
   #sessionOnePartOneBg { background-image: url("../assets/images/session-one-part-one.webp"); }
   #sessionTwoPartOneBg { background-image: url("../assets/images/session-two-part-one.webp"); }
@@ -400,6 +397,8 @@ section { h2 {margin-bottom: 1.5rem;} article {text-align: justify; p {margin: 0
 .square-items-container {width: 100%;height: 100%;display: grid;grid-template-columns: 1fr;grid-template-rows: auto;justify-items: center;grid-gap: 36px; .square-item {width: 100%;color: $black;background-color: $tertiaryColor;padding-bottom: 100%;border-radius: 8px;position: relative;box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25); .content {width: 100%;margin: 0;text-align: center;font-family: $iranSansMedium;font-size: 5.5vw;@include centerPosition(); .count {color: $primaryColor;font-size: 22vw;font-family: $iranSansMedium;} } } }
 @media only screen and (min-width: $breakpoint-sm) { .square-items-container {grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;grid-gap: 24px; .square-item .content {font-size: 2.5vw; .count {font-size: 10vw;} } } }
 @media only screen and (min-width: $breakpoint-lg) { .square-items-container .square-item .content {font-size: 1.5vw; .count {font-size: 5vw;} } }
+@media only screen and (min-width: $breakpoint-xxxl) { .square-items-container .square-item .content {font-size: 1vw; .count {font-size: 4.5vw;} } }
+@media only screen and (min-width: $breakpoint-mac-devices) { .square-items-container .square-item .content {font-size: 0.75vw; .count {font-size: 3.75vw;} } }
 
 .result-items-container {
   height: 100%;
@@ -457,73 +456,6 @@ section { h2 {margin-bottom: 1.5rem;} article {text-align: justify; p {margin: 0
 @media only screen and (min-width: $breakpoint-lg) { .find-item { .content {font-size: 1.4rem; .count {font-size: 5.5rem;} } } }
 @media only screen and (min-width: $breakpoint-xl) { .find-item { .content {font-size: 1.4rem; .count {font-size: 5.5rem;} } } }
 
-.chart-container {
-  display: flex;
-  flex-flow: wrap column;
-  align-items: center;
-
-  .circular-chart {
-    position: relative;
-
-    svg {
-      height: 200px;
-      max-height: 200px;
-
-      .chart-bg {
-        fill: $tertiaryColor;
-        stroke: none;
-      }
-
-      .circle {
-        fill: none;
-        stroke: $secondaryColor;
-        stroke-width: 2;
-        stroke-linecap: round;
-      }
-    }
-
-    .percentage {
-      color: #212529;
-      opacity: 0.8;
-      font-family: $iranSansRegular;
-      font-weight: bold;
-      font-size: 1.5em;
-      margin: 6px 0 0 4px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .count {
-    font-size: 2.5rem;
-  }
-}
-
-.chart-icons { div {min-width: 135px; p {text-align: center;} } .icon-sm img {width: 48px;height: 48px;} }
-.bg-secondary { .circular-chart { svg { .chart-bg { stroke: none } .circle { stroke: $white } } } }
-
-.chart-container.white .circular-chart svg .circle { stroke: $white; }
-.chart-container.small .circular-chart { svg {width: 120px;height: 120px} .percentage { font-size: 1rem;margin: 3px 0 0 0; .count {font-size: 2rem;} }}
-
-@media only screen and (min-width: $breakpoint-xl) {
-  .chart-container.small .circular-chart {
-    svg {
-      width: 150px;
-      height: 150px
-    }
-
-    .percentage {
-      font-size: 2rem;
-      margin: 3px 0 0 0;
-
-      .count {
-        font-size: 2.25rem;
-      }
-    }
-  }
-}
 
 .path {
   circle, ellipse {

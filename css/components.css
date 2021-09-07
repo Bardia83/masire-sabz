@@ -1,0 +1,347 @@
+.icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.icon.large svg {
+  width: 64px;
+  height: 64px;
+}
+
+.card-item {
+  background: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+.card-item .content {
+  padding: 16px 12px 16px 16px;
+}
+.card-item .content h3.title {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+.card-item .content p.subtitle {
+  margin: 0;
+}
+.card-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 16px 12px 12px;
+  border-left: 1px solid rgba(128, 130, 133, 0.5);
+  position: relative;
+}
+.card-item .icon:before {
+  z-index: 0 !important;
+}
+.card-item .icon svg {
+  fill: #808285;
+  position: relative;
+  z-index: 1;
+}
+
+.card-item.primary-color {
+  background: #509C4E;
+  box-shadow: none;
+}
+.card-item.primary-color p.subtitle {
+  color: #FFFFFF !important;
+}
+.card-item.primary-color .icon {
+  border-color: transparent;
+}
+.card-item.primary-color .icon svg {
+  fill: #FFFFFF;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-container .chart {
+  position: relative;
+}
+.chart-container .chart svg {
+  width: 200px;
+  height: 200px;
+}
+.chart-container .chart svg .background {
+  stroke: none;
+}
+.chart-container .chart svg .stroke {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.chart-container .chart .percentage {
+  margin: 6px 0 0 0;
+  font-family: "Iran Sans Medium";
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.chart.primary-color svg .background {
+  fill: #e0e0e0;
+}
+.chart.primary-color svg .stroke {
+  stroke: #FFFFFF;
+}
+
+.chart.secondary-color svg .background {
+  fill: #e0e0e0;
+}
+.chart.secondary-color svg .stroke {
+  stroke: #FFFFFF;
+}
+
+.chart.tertiary-color svg .background {
+  fill: #FFFFFF;
+}
+.chart.tertiary-color svg .stroke {
+  stroke: #e54546;
+}
+.chart.tertiary-color .percentage {
+  color: #e54546 !important;
+}
+
+.chart.fourth-color svg .background {
+  fill: #e0e0e0;
+}
+.chart.fourth-color svg .stroke {
+  stroke: #e54546;
+}
+.chart.fourth-color .percentage {
+  color: #808285;
+}
+
+.animate__chartFiveStrokeDasharray {
+  animation-name: chartFiveStrokeDasharray;
+  -webkit-animation-name: chartFiveStrokeDasharray;
+}
+
+@keyframes chartFiveStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 5, 100;
+  }
+}
+.animate__chartSixStrokeDasharray {
+  animation-name: chartSixStrokeDasharray;
+  -webkit-animation-name: chartSixStrokeDasharray;
+}
+
+@keyframes chartSixStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 6, 100;
+  }
+}
+.animate__chartElevenStrokeDasharray {
+  animation-name: chartElevenStrokeDasharray;
+  -webkit-animation-name: chartElevenStrokeDasharray;
+}
+
+@keyframes chartElevenStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 11, 100;
+  }
+}
+.animate__chartThirtyTwoStrokeDasharray {
+  animation-name: chartThirtyTwoStrokeDasharray;
+  -webkit-animation-name: chartThirtyTwoStrokeDasharray;
+}
+
+@keyframes chartThirtyTwoStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 32, 100;
+  }
+}
+.animate__chartFortySixStrokeDasharray {
+  animation-name: chartFortySixStrokeDasharray;
+  -webkit-animation-name: chartFortySixStrokeDasharray;
+}
+
+@keyframes chartFortySixStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 46, 100;
+  }
+}
+.animate__chartFortyEightStrokeDasharray {
+  animation-name: chartFortyEightStrokeDasharray;
+  -webkit-animation-name: chartFortyEightStrokeDasharray;
+}
+
+@keyframes chartFortyEightStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 48, 100;
+  }
+}
+.animate__chartFiftyStrokeDasharray {
+  animation-name: chartFiftyStrokeDasharray;
+  -webkit-animation-name: chartFiftyStrokeDasharray;
+}
+
+@keyframes chartFiftyStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 50, 100;
+  }
+}
+.animate__chartFiftyTwoStrokeDasharray {
+  animation-name: chartFiftyTwoStrokeDasharray;
+  -webkit-animation-name: chartFiftyTwoStrokeDasharray;
+}
+
+@keyframes chartFiftyTwoStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 52, 100;
+  }
+}
+.animate__chartFiftyEightStrokeDasharray {
+  animation-name: chartFiftyEightStrokeDasharray;
+  -webkit-animation-name: chartFiftyEightStrokeDasharray;
+}
+
+@keyframes chartFiftyEightStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 58, 100;
+  }
+}
+.animate__chartFiftySixtySixStrokeDasharray {
+  animation-name: chartFiftySixtySixStrokeDasharray;
+  -webkit-animation-name: chartFiftySixtySixStrokeDasharray;
+}
+
+@keyframes chartFiftySixtySixStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 66, 100;
+  }
+}
+.animate__chartSeventyFiveStrokeDasharray {
+  animation-name: chartSeventyFiveStrokeDasharray;
+  -webkit-animation-name: chartSeventyFiveStrokeDasharray;
+}
+
+@keyframes chartSeventyFiveStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 75, 100;
+  }
+}
+.animate__chartNinetyFourStrokeDasharray {
+  animation-name: chartNinetyFourStrokeDasharray;
+  -webkit-animation-name: chartNinetyFourStrokeDasharray;
+}
+
+@keyframes chartNinetyFourStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 94, 100;
+  }
+}
+.chart-icon {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+}
+.chart-icon h2 {
+  margin: 0 0 -10px;
+  padding: 4px 0;
+  font-size: 2.5rem;
+}
+.chart-icon p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.chart-icon.secondary-color .icon {
+  fill: #FFFFFF;
+}
+.chart-icon.secondary-color h2, .chart-icon.secondary-color p {
+  color: #FFFFFF;
+}
+
+.chart-icon.tertiary-color .icon {
+  fill: #808285;
+}
+.chart-icon.tertiary-color h2 {
+  color: #e54546;
+}
+.chart-icon.tertiary-color p {
+  color: #808285;
+}
+
+.simple-card {
+  width: 100%;
+  display: inline-block;
+  color: #FFFFFF;
+  background: #e54546;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: "Iran Sans Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.list-underline {
+  background: #e0e0e0;
+  padding: 8px;
+  list-style-type: none;
+  border-radius: 8px;
+  margin: 0;
+}
+.list-underline .item {
+  font-family: "Iran Sans Medium";
+  font-weight: bold;
+  padding-right: 16px;
+}
+.list-underline hr {
+  border: none;
+  border-bottom: 1px solid #cacaca;
+}
+
+/*# sourceMappingURL=components.css.map */
