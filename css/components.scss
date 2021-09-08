@@ -88,20 +88,42 @@
   }
 }
 
+.chart-container .chart.small {
+  svg {
+    width: 150px;
+    height: 150px;
+  }
+  .percentage {
+    font-size: 2rem;
+    margin: 4px 0 0 -1px;
+  }
+}
+
 .chart.primary-color { svg { .background {fill: $tertiaryColor;} .stroke {stroke: $white;} } }
 .chart.secondary-color { svg { .background {fill: $tertiaryColor;} .stroke {stroke: $white;} } }
 .chart.tertiary-color { svg { .background {fill: $white;} .stroke {stroke: $secondaryColor;} } .percentage {color: $secondaryColor !important;} }
+.chart.tertiary-primary-color { svg { .background {fill: $white;} .stroke {stroke: $primaryColor;} } .percentage {color: $primaryColor !important;} }
 .chart.fourth-color { svg { .background {fill: $tertiaryColor;} .stroke {stroke: $secondaryColor;} } .percentage {color: $iconColor;} }
+
+.animate__chartFourStrokeDasharray {animation-name: chartFourStrokeDasharray;-webkit-animation-name: chartFourStrokeDasharray;}
+@keyframes chartFourStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 4, 100;} }
+
 
 .animate__chartFiveStrokeDasharray {animation-name: chartFiveStrokeDasharray;-webkit-animation-name: chartFiveStrokeDasharray;}
 @keyframes chartFiveStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 5, 100;} }
 
-
 .animate__chartSixStrokeDasharray {animation-name: chartSixStrokeDasharray;-webkit-animation-name: chartSixStrokeDasharray;}
 @keyframes chartSixStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 6, 100;} }
 
+.animate__chartNineStrokeDasharray {animation-name: chartNineStrokeDasharray;-webkit-animation-name: chartNineStrokeDasharray;}
+@keyframes chartNineStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 9, 100;} }
+
 .animate__chartElevenStrokeDasharray {animation-name: chartElevenStrokeDasharray;-webkit-animation-name: chartElevenStrokeDasharray;}
 @keyframes chartElevenStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 11, 100;} }
+
+.animate__chartThirteenStrokeDasharray {animation-name: chartThirteenStrokeDasharray;-webkit-animation-name: chartThirteenStrokeDasharray;}
+@keyframes chartThirteenStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 13, 100;} }
+
 
 .animate__chartThirtyTwoStrokeDasharray {animation-name: chartThirtyTwoStrokeDasharray;-webkit-animation-name: chartThirtyTwoStrokeDasharray;}
 @keyframes chartThirtyTwoStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 32, 100;} }
@@ -121,11 +143,11 @@
 .animate__chartFiftyEightStrokeDasharray {animation-name: chartFiftyEightStrokeDasharray;-webkit-animation-name: chartFiftyEightStrokeDasharray;}
 @keyframes chartFiftyEightStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 58, 100;} }
 
-.animate__chartFiftySixtySixStrokeDasharray {animation-name: chartFiftySixtySixStrokeDasharray;-webkit-animation-name: chartFiftySixtySixStrokeDasharray;}
-@keyframes chartFiftySixtySixStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 66, 100;} }
+.animate__chartSixtySixStrokeDasharray {animation-name: chartSixtySixStrokeDasharray;-webkit-animation-name: chartSixtySixStrokeDasharray;}
+@keyframes chartSixtySixStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 66, 100;} }
 
-.animate__chartSeventyFiveStrokeDasharray {animation-name: chartSeventyFiveStrokeDasharray;-webkit-animation-name: chartSeventyFiveStrokeDasharray;}
-@keyframes chartSeventyFiveStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 75, 100;} }
+.animate__chartSeventyFourStrokeDasharray {animation-name: chartSeventyFourStrokeDasharray;-webkit-animation-name: chartSeventyFourStrokeDasharray;}
+@keyframes chartSeventyFourStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 74, 100;} }
 
 .animate__chartNinetyFourStrokeDasharray {animation-name: chartNinetyFourStrokeDasharray;-webkit-animation-name: chartNinetyFourStrokeDasharray;}
 @keyframes chartNinetyFourStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 94, 100;} }

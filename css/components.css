@@ -93,6 +93,15 @@
   -webkit-transform: translate(-50%, -50%);
 }
 
+.chart-container .chart.small svg {
+  width: 150px;
+  height: 150px;
+}
+.chart-container .chart.small .percentage {
+  font-size: 2rem;
+  margin: 4px 0 0 -1px;
+}
+
 .chart.primary-color svg .background {
   fill: #e0e0e0;
 }
@@ -117,6 +126,16 @@
   color: #e54546 !important;
 }
 
+.chart.tertiary-primary-color svg .background {
+  fill: #FFFFFF;
+}
+.chart.tertiary-primary-color svg .stroke {
+  stroke: #509C4E;
+}
+.chart.tertiary-primary-color .percentage {
+  color: #509C4E !important;
+}
+
 .chart.fourth-color svg .background {
   fill: #e0e0e0;
 }
@@ -127,6 +146,19 @@
   color: #808285;
 }
 
+.animate__chartFourStrokeDasharray {
+  animation-name: chartFourStrokeDasharray;
+  -webkit-animation-name: chartFourStrokeDasharray;
+}
+
+@keyframes chartFourStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 4, 100;
+  }
+}
 .animate__chartFiveStrokeDasharray {
   animation-name: chartFiveStrokeDasharray;
   -webkit-animation-name: chartFiveStrokeDasharray;
@@ -153,6 +185,19 @@
     stroke-dasharray: 6, 100;
   }
 }
+.animate__chartNineStrokeDasharray {
+  animation-name: chartNineStrokeDasharray;
+  -webkit-animation-name: chartNineStrokeDasharray;
+}
+
+@keyframes chartNineStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 9, 100;
+  }
+}
 .animate__chartElevenStrokeDasharray {
   animation-name: chartElevenStrokeDasharray;
   -webkit-animation-name: chartElevenStrokeDasharray;
@@ -164,6 +209,19 @@
   }
   to {
     stroke-dasharray: 11, 100;
+  }
+}
+.animate__chartThirteenStrokeDasharray {
+  animation-name: chartThirteenStrokeDasharray;
+  -webkit-animation-name: chartThirteenStrokeDasharray;
+}
+
+@keyframes chartThirteenStrokeDasharray {
+  from {
+    stroke-dasharray: 0, 100;
+  }
+  to {
+    stroke-dasharray: 13, 100;
   }
 }
 .animate__chartThirtyTwoStrokeDasharray {
@@ -244,12 +302,12 @@
     stroke-dasharray: 58, 100;
   }
 }
-.animate__chartFiftySixtySixStrokeDasharray {
-  animation-name: chartFiftySixtySixStrokeDasharray;
-  -webkit-animation-name: chartFiftySixtySixStrokeDasharray;
+.animate__chartSixtySixStrokeDasharray {
+  animation-name: chartSixtySixStrokeDasharray;
+  -webkit-animation-name: chartSixtySixStrokeDasharray;
 }
 
-@keyframes chartFiftySixtySixStrokeDasharray {
+@keyframes chartSixtySixStrokeDasharray {
   from {
     stroke-dasharray: 0, 100;
   }
@@ -257,17 +315,17 @@
     stroke-dasharray: 66, 100;
   }
 }
-.animate__chartSeventyFiveStrokeDasharray {
-  animation-name: chartSeventyFiveStrokeDasharray;
-  -webkit-animation-name: chartSeventyFiveStrokeDasharray;
+.animate__chartSeventyFourStrokeDasharray {
+  animation-name: chartSeventyFourStrokeDasharray;
+  -webkit-animation-name: chartSeventyFourStrokeDasharray;
 }
 
-@keyframes chartSeventyFiveStrokeDasharray {
+@keyframes chartSeventyFourStrokeDasharray {
   from {
     stroke-dasharray: 0, 100;
   }
   to {
-    stroke-dasharray: 75, 100;
+    stroke-dasharray: 74, 100;
   }
 }
 .animate__chartNinetyFourStrokeDasharray {

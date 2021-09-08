@@ -4266,8 +4266,8 @@
 }
 
 @keyframes pathLineOffset {
-    from {stroke-dasharray: 194;stroke-dashoffset: -194;}
-    to {stroke-dasharray: 194;stroke-dashoffset: 0;}
+    from {stroke-dasharray: 196.4;stroke-dashoffset: 196.4;}
+    to {stroke-dasharray: 196.4;stroke-dashoffset: 0;}
 }
 
 .animate__opc {
@@ -4279,17 +4279,6 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
-.animate__projectChartOne {-webkit-animation-name: projectChartOne;animation-name: projectChartOne;}
-@keyframes projectChartOne { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 46 100;} }
-.animate__projectChartTwo {-webkit-animation-name: projectChartTwo;animation-name: projectChartTwo;}
-@keyframes projectChartTwo { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 32 100;} }
-.animate__projectChartThree {-webkit-animation-name: projectChartThree;animation-name: projectChartThree;}
-@keyframes projectChartThree { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 11 100;} }
-.animate__projectChartFour {-webkit-animation-name: projectChartFour;animation-name: projectChartFour;}
-@keyframes projectChartFour { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 6 100;} }
-.animate__projectChartFive {-webkit-animation-name: projectChartFive;animation-name: projectChartFive;}
-@keyframes projectChartFive { from {stroke-dasharray: 0 100;} to {stroke-dasharray: 6 100;} }
 
 .animate__fadeInDownZoomIn {
     animation-name: fadeInDownZoomIn;
@@ -4306,14 +4295,4 @@
         opacity: 1;
         transform: scale(1) translate3d(0, 0, 0);
     }
-}
-
-.animate__easeOut {
-    animation-timing-function: ease-out;
-    -webkit-animation-timing-function: ease-out;
-}
-
-.animate__duration_050s {
-    animation-duration: 0.50s;
-    -webkit-animation-duration: 0.50s;
 }

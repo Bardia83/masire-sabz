@@ -631,8 +631,6 @@ section article p {
   fill: none;
   stroke: #509C4E;
   stroke-width: 8px;
-  stroke-dasharray: 194;
-  stroke-dashoffset: -194;
 }
 .path text {
   font-size: 12px;
