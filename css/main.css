@@ -32,7 +32,7 @@
   width: 100%;
   height: auto;
 }
-.header .content img {
+.header .content svg {
   width: 50%;
   height: auto;
 }
@@ -161,55 +161,6 @@
   z-index: 2;
 }
 
-#sessionZeroPartTwoBg {
-  background-image: url("../assets/images/session-zero-part-two.webp");
-  -webkit-background-image: url("../assets/images/session-zero-part-two.webp");
-}
-
-#sessionZeroPartThreeBg {
-  background-image: url("../assets/images/session-zero-part-three.webp");
-}
-
-#sessionOnePartOneBg {
-  background-image: url("../assets/images/session-one-part-one.webp");
-}
-
-#sessionTwoPartOneBg {
-  background-image: url("../assets/images/session-two-part-one.webp");
-}
-
-#sessionTwoPartTwoBg {
-  background-image: url("../assets/images/session-two-part-two.webp");
-}
-
-#sessionTwoPartSixBg {
-  background-image: url("../assets/images/session-two-part-six.webp");
-}
-
-#sessionThreePartOneBg {
-  background-image: url("../assets/images/session-three-part-one.webp");
-}
-
-#sessionFourPartOneBg {
-  background-image: url("../assets/images/session-four-part-one.webp");
-}
-
-#sessionFourPartFiveBg {
-  background-image: url("../assets/images/session-four-part-five.webp");
-}
-
-#sessionFourPartNineBg {
-  background-image: url("../assets/images/session-four-part-nine.webp");
-}
-
-#sessionFourPartTenBg {
-  background-image: url("../assets/images/session-four-part-ten.webp");
-}
-
-#sessionFourPartTwelveBg {
-  background-image: url("../assets/images/session-four-part-twelve.webp");
-}
-
 section h2 {
   margin-bottom: 1.5rem;
 }
@@ -264,14 +215,14 @@ section article p {
 }
 .accordion .accordion-body article p strong {
   color: #509C4E;
-  font-family: "Iran Sans Bold", Arial, sans-serif;
+  font-weight: bold;
 }
 .accordion .accordion-body article p .child {
   display: inline-block;
   padding-right: 24px;
 }
 .accordion .accordion-body article p .child strong {
-  color: #bababa !important;
+  color: #808285;
 }
 
 .accordion.bg-secondary {
@@ -289,18 +240,6 @@ section article p {
   color: #e54546;
 }
 
-#sessionZeroPartFour h1 {
-  margin-bottom: 0.5rem;
-}
-#sessionZeroPartFour p {
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 576px) {
-  #sessionZeroPartFour h1 {
-    margin-bottom: 2rem;
-  }
-}
 .accordion .accordion-body::-webkit-scrollbar, .tab-content::-webkit-scrollbar {
   width: 4px;
 }
@@ -317,31 +256,31 @@ section article p {
   background: #555;
 }
 
-#sessionOnePartOne .tab-container {
+.tab-container {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
-#sessionOnePartOne .tab-container .nav-tabs {
+.tab-container .nav-tabs {
   border-bottom: none;
   flex-wrap: nowrap;
 }
-#sessionOnePartOne .tab-container .nav-tabs .nav-item:first-of-type .nav-link {
+.tab-container .nav-tabs .nav-item:first-of-type .nav-link {
   border-top-left-radius: 0;
 }
-#sessionOnePartOne .tab-container .nav-tabs .nav-item:last-of-type .nav-link {
+.tab-container .nav-tabs .nav-item:last-of-type .nav-link {
   border-top-right-radius: 0;
 }
-#sessionOnePartOne .tab-container .nav-tabs .nav-item .nav-link.active {
+.tab-container .nav-tabs .nav-item .nav-link.active {
   color: #FFFFFF;
   background: #509C4E;
 }
-#sessionOnePartOne .tab-container .nav-tabs .nav-item .nav-link {
+.tab-container .nav-tabs .nav-item .nav-link {
   border: none;
 }
-#sessionOnePartOne .tab-container .nav-tabs .nav-item .nav-link:not(.active) {
+.tab-container .nav-tabs .nav-item .nav-link:not(.active) {
   color: #509C4E;
   background: #e0e0e0;
 }
-#sessionOnePartOne .tab-container .tab-content {
+.tab-container .tab-content {
   max-height: 500px;
   border: none;
   border-radius: 0 0 24px 24px;
@@ -349,34 +288,34 @@ section article p {
   overflow-x: hidden;
   overflow-y: auto;
 }
-#sessionOnePartOne .tab-container .tab-content article p {
+.tab-container .tab-content article p {
   margin: 8px 0;
 }
-#sessionOnePartOne .tab-container .tab-content .icons .row-one, #sessionOnePartOne .tab-container .tab-content .icons .row-two {
+.tab-container .tab-content .icons .row-one, .tab-container .tab-content .icons .row-two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 16px;
   padding: 8px 0;
 }
-#sessionOnePartOne .tab-container .tab-content .icons .row-one p, #sessionOnePartOne .tab-container .tab-content .icons .row-two p {
+.tab-container .tab-content .icons .row-one p, .tab-container .tab-content .icons .row-two p {
   text-align: center;
 }
-#sessionOnePartOne .tab-container .tab-content .icons .row-two {
+.tab-container .tab-content .icons .row-two {
   grid-template-columns: repeat(2, 1fr);
 }
-#sessionOnePartOne .tab-container .tab-content .icons .row-two div:last-of-type {
+.tab-container .tab-content .icons .row-two div:last-of-type {
   grid-column: 1/3;
 }
 
 @media only screen and (min-width: 768px) {
-  #sessionOnePartOne .tab-container .tab-content .icons .row-one {
+  .tab-container .tab-content .icons .row-one {
     grid-template-columns: repeat(4, 1fr);
   }
-  #sessionOnePartOne .tab-container .tab-content .icons .row-two {
+  .tab-container .tab-content .icons .row-two {
     grid-template-columns: repeat(5, 1fr);
   }
-  #sessionOnePartOne .tab-container .tab-content .icons .row-two div:last-of-type {
+  .tab-container .tab-content .icons .row-two div:last-of-type {
     grid-column: auto;
   }
 }
@@ -402,7 +341,7 @@ section article p {
   background-color: #e54546;
   z-index: 1;
 }
-.action-item .icon-lg img {
+.action-item .icon-lg svg {
   position: relative;
   z-index: 2;
 }
@@ -435,7 +374,7 @@ section article p {
   height: 64px;
   z-index: 0;
 }
-.carousel.outside .carousel-item .card .card-body .card-title .icon-sm img {
+.carousel.outside .carousel-item .card .card-body .card-title .icon-sm svg {
   width: 64px;
   height: 64px;
   position: relative;
@@ -503,7 +442,7 @@ section article p {
   text-align: justify;
   margin: 0;
 }
-.quote .bottom-quote-symbol {
+.quote .sessionTwoPartTwoBg {
   align-self: flex-end;
 }
 
@@ -512,13 +451,13 @@ section article p {
     padding: 48px 102px;
   }
 }
-.target-item img {
+.target-item svg {
   width: 64px;
   height: auto;
 }
 
 @media only screen and (min-width: 768px) {
-  .target-item img {
+  .target-item svg {
     width: auto;
     height: 64px;
   }
