@@ -4339,5 +4339,9 @@
 .animate__chartSeventyFourStrokeDasharray {animation-name: chartSeventyFourStrokeDasharray;-webkit-animation-name: chartSeventyFourStrokeDasharray;}
 @keyframes chartSeventyFourStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 74, 100;} }
 
+.animate__chartSeventyFiveStrokeDasharray {animation-name: chartSeventyFiveStrokeDasharray;-webkit-animation-name: chartSeventyFiveStrokeDasharray;}
+@keyframes chartSeventyFiveStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 75, 100;} }
+
+
 .animate__chartNinetyFourStrokeDasharray {animation-name: chartNinetyFourStrokeDasharray;-webkit-animation-name: chartNinetyFourStrokeDasharray;}
 @keyframes chartNinetyFourStrokeDasharray { from {stroke-dasharray: 0, 100;} to {stroke-dasharray: 94, 100;} }
