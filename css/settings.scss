@@ -19,7 +19,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: $iranSansBlac
 a {transition: 0.5s !important;}
 .fs-lg {font-size: 5rem;}
 
-img {border-radius: 8px}
+img {border-radius: 8px;width: 100%;height: auto;}
 
 .bg-primary {background: $primaryColor !important;}
 .primary-color {color: $primaryColor !important;}
